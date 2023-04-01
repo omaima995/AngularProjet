@@ -1,0 +1,59 @@
+<!--
+	<ngb-carousel *ngIf="popularProduct">
+	<ng-template *ngFor ="let item of popularProduct" ngbSlide>
+		<div class="picsum-img-wrapper">
+			<img class="product-header-img" src="{{item.image}}" alt="Random first slide" />
+		</div>
+		<div class="carousel-caption">
+			<h3>{{item.name}}</h3>
+			<p>{{item.description}}</p>
+		</div>
+	</ng-template>
+	 il div ba3d blasetha houni 
+</ngb-carousel>
+
+
+
+-->
+<div *ngIf="popularProduct">
+	<div *ngFor ="let item of popularProduct" ngbSlide>
+		<div class="picsum-img-wrapper">
+			<a routerLink="/"><img src="../assets/images/menu.png" alt="Logo" class="img-fluid"></a>
+		</div>
+		
+	</div>
+
+	<div class="product-list-wrapper">
+		<h1 class="text"> Taste the Trend</h1>
+		<div class="container"> 
+			<div class ="row">
+				<div class="col-sm-3" *ngFor="let item of trendyProduct"> 
+					<div class="item">
+						<img src= "{{item.image}}">
+						<div class="body">
+							<h4 class="name-head">{{item.name}}</h4>
+							<div class="product-price">
+								<p>{{item.description}}</p>
+							</div>
+						
+							<div class="product-footer px-3 mb-2 d-flex justify-content-between align-items-center">
+								<button class="btn btn-outline-success"><a  routerLink="/details/{{item.id}}">View Details</a></button>
+								<span>{{ item.price }} TND</span>
+								
+								
+							</div>
+						</div>
+					</div>
+					
+		
+				</div>
+
+		</div>
+		
+		</div>
+	</div>
+</div>
+
+
+
+ 

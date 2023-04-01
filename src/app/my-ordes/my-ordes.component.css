@@ -1,0 +1,40 @@
+.my-orders h1{
+    margin-top: 50px;
+    margin-bottom: 50px;
+
+}
+.my-orders .orderIMG{
+    width: 70px;
+}
+.order-data{
+    margin-top: 10px;
+    margin-bottom: 10px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid #ddd;
+
+}
+.my-orders{
+    margin-bottom: 100px;
+}
+.img-fluid {
+    max-width: 24%;
+    height: auto;
+}
+
+.title-checkout{
+    font-size: 50px;
+    font-weight: bold;
+    margin-left: 38%;
+    -webkit-text-decoration: underline #ddd;
+    text-decoration: underline #ddd;
+    color: #f76a5f;
+    margin-bottom: 29px;
+    font-family: Narkisim;
+
+    }
+    .head{
+        font-family: Narkisim;
+        font-weight: bold;
+        font-size: 20px;
+
+    }

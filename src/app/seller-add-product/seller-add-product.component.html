@@ -1,0 +1,46 @@
+
+
+
+
+
+<div class="container">
+  <div class="row">
+    <div class="col-md-6 mx-auto">
+      <div class="card add-product item-description ">
+        <h1 class="card-title text-center title-checkout">Add New Product</h1>
+        <div class="card-body details">
+          <p class="message add-product-message">{{addProductMessage}}</p>
+          <form #addProduct="ngForm" (ngSubmit)="submit(addProduct.value)" class="common-form">
+            <mat-form-field class="form-group">
+              <input matInput type="text" ngModel name="name" placeholder="Enter Product Name">
+              <mat-label>Product Name</mat-label>
+            </mat-form-field>
+            <mat-form-field class="form-group">
+              <input matInput type="number" ngModel name="price" placeholder="Enter Product Price">
+              <mat-label>Product Price</mat-label>
+            </mat-form-field>
+            <mat-form-field class="form-group">
+              <input matInput type="text" ngModel name="color" placeholder="Enter Product color">
+              <mat-label>Product Color</mat-label>
+            </mat-form-field>
+            <mat-form-field class="form-group">
+              <input matInput type="text" ngModel name="category" placeholder="Enter Product Category">
+              <mat-label>Product Category</mat-label>
+            </mat-form-field>
+            <mat-form-field class="form-group">
+              <textarea matInput rows="4" ngModel name="description" placeholder="Enter Product Description"></textarea>
+              <mat-label>Product Description</mat-label>
+            </mat-form-field>
+            <mat-form-field class="form-group">
+              <input matInput type="text" ngModel name="image" placeholder="Enter Product Image URL">
+              <mat-label>Product Image URL</mat-label>
+            </mat-form-field>
+            <div class="text-center">
+              <button class="btn btn-outline-success material-button input-checkout" type="submit">Add Product</button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

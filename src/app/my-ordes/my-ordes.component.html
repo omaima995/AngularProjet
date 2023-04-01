@@ -1,0 +1,42 @@
+<div class="container">
+
+<div class="my-orders">
+ 
+    <h1 class="title-checkout">My order</h1>
+    <div class="row">
+        <div class="col-sm-3 head">
+            <span> order</span>
+        </div>
+        <div class="col-sm-3 head">
+            <span> order Id</span>
+        </div>
+        <div class="col-sm-3 head">
+            <span> price</span>
+        </div>
+    
+        <div class="col-sm-3 head ">
+            <span>Action</span>
+        </div>
+
+    </div>
+    <div class="row order-data" *ngFor="let order of orderData">
+    
+        <div class="col-sm-3">
+            <img src="../assets/images/iit.png" alt="Logo" class="img-fluid">
+        </div>
+        <div class="col-sm-3">
+            <span>{{order.id}}</span>
+        </div>
+        <div class="col-sm-3">
+            <span>{{order.totalPrice}}</span>
+        </div>
+       
+        <div class="col-sm-3">
+            <span><button class="btn btn-outline-success" (click)="cancelOrder(order.id)">cancel Order</button></span>
+        </div>
+
+    </div>
+
+</div>
+
+</div>

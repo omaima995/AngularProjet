@@ -1,0 +1,44 @@
+<div class="container">
+    <div class="row">
+      <div class="col-md-6 mx-auto">
+        <div class="card Update-product">
+          <h1 class="card-title text-center">update product</h1>
+          <div class="card-body">
+            <form #addProduct="ngForm" (ngSubmit)="submit(addProduct.value)" class="common-form">
+              <p class="message">{{productMessage}}</p>
+              <mat-form-field class="form-group">
+                <input matInput type="text" ngModel="{{productData?.name}}" name="name" placeholder="Enter Product Name">
+                <mat-label>Product Name</mat-label>
+              </mat-form-field>
+              <mat-form-field class="form-group">
+                <input matInput type="number" ngModel="{{productData?.price}}" name="price" placeholder="Enter Product Price">
+                <mat-label>Product Price</mat-label>
+              </mat-form-field>
+              <mat-form-field class="form-group">
+                <input matInput type="text" ngModel="{{productData?.color}}" name="color" placeholder="Enter Product color">
+                <mat-label>Product Color</mat-label>
+              </mat-form-field>
+              <mat-form-field class="form-group">
+                <input matInput type="text" ngModel="{{productData?.category}}" name="category" placeholder="Enter Product Category">
+                <mat-label>Product Category</mat-label>
+              </mat-form-field>
+              <mat-form-field class="form-group">
+                <textarea matInput rows="4" ngModel="{{productData?.description}}" name="description" placeholder="Enter Product Description"></textarea>
+                <mat-label>Product Description</mat-label>
+              </mat-form-field>
+              <mat-form-field class="form-group">
+                <input matInput type="text" ngModel="{{productData?.image}}" name="image" placeholder="Enter Product Image URL">
+                <mat-label>Product Image URL</mat-label>
+              </mat-form-field>
+              <div class="text-center">
+          
+  
+                <button mat-raised-button color="primary" class="form-button bg-info">Update Product</button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  

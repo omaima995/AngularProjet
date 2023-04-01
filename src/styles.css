@@ -1,1 +1,46 @@
 /* You can add global styles to this file, and also import other style files */
+@import "~bootstrap/dist/css/bootstrap.min.css";
+    body{
+        font-family: sans-serif;
+    }
+    .container{
+        margin-left: 5%;
+        margin-right: 5%;
+    }
+
+.common-form{
+    text-align: center;
+    display: flex;
+    margin: auto;
+    flex-direction: column;
+    width: 300px;
+
+}
+.from-input{
+    height: 35px;
+    margin-bottom: 20px;
+    padding-left: 10px;
+    border: 1px solid #FE5C36;
+    color: #FE5C36;
+
+}
+.form-button{
+    height: 35px;
+    border: 1px solid #FE5C36;
+    cursor: pointer;
+}
+.message{
+    color: green;
+
+}
+.carousel-caption{
+    background-color: #00000082;
+    border-radius: 5px;
+}
+.carousel-control-next-icon, .carousel-prev-icon{
+    background-color: black;
+    border: 5px; 
+}
+.max-width{
+    width: 100%;
+}

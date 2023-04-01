@@ -1,0 +1,326 @@
+{
+  "seller": [
+    {
+      "name": "omaima Abdennadher",
+      "email": "omaima@gmail.com",
+      "password": "123456",
+      "id": 1
+    },
+    {
+      "name": "Mohamed Lajmi",
+      "email": "Mohamed@gmail.com",
+      "password": "123456",
+      "id": 2
+    },
+    {
+      "name": "Ahmed Abdennadher",
+      "email": "Ahmed@gmail.com",
+      "password": "123456",
+      "id": 3
+    },
+    {
+      "name": "amal",
+      "id": 4
+    },
+    {
+      "name": "imen",
+      "password": "123456",
+      "email": "imen@gmail.com",
+      "id": 5
+    },
+    {
+      "name": "houcem",
+      "password": "123456",
+      "email": "houcem@gmail.com",
+      "id": 6
+    },
+    {
+      "name": "rayen",
+      "password": "12365478",
+      "email": "rayen@gmail.com",
+      "id": 7
+    },
+    {
+      "name": "omaima",
+      "password": "123456",
+      "email": "omaima@gmail.com",
+      "id": 8
+    },
+    {
+      "name": "ahmed",
+      "password": "123456",
+      "email": "ahmed@gmail.com",
+      "id": 11
+    },
+    {
+      "name": "Ahmed Abdennadher",
+      "email": "Ahmed@gmail.com",
+      "password": "123456",
+      "id": 12
+    },
+    {
+      "name": "Ahmed Abdennadher",
+      "email": "Ahmed@gmail.com",
+      "password": "123456",
+      "id": 13
+    },
+    {
+      "id": 14
+    },
+    {
+      "name": "",
+      "password": "",
+      "email": "",
+      "id": 15
+    },
+    {
+      "name": "",
+      "password": "",
+      "email": "",
+      "id": 16
+    },
+    {
+      "name": "mohamed",
+      "password": "123456",
+      "email": "mohamedlajmi@gmail.com",
+      "id": 17
+    },
+    {
+      "name": "omaima",
+      "email": "omaymaabdennadher95@gmail.com",
+      "password": "123456",
+      "id": 18
+    },
+    {
+      "name": "",
+      "email": "",
+      "password": "",
+      "id": 19
+    },
+    {
+      "name": "",
+      "email": "",
+      "password": "",
+      "id": 20
+    },
+    {
+      "name": "",
+      "email": "",
+      "password": "",
+      "id": 21
+    },
+    {
+      "name": "",
+      "email": "",
+      "password": "",
+      "id": 22
+    },
+    {
+      "name": "",
+      "email": "",
+      "password": "",
+      "id": 23
+    },
+    {
+      "name": "",
+      "email": "",
+      "password": "",
+      "id": 24
+    }
+  ],
+  "products": [
+    {
+      "name": "test3",
+      "price": "10",
+      "color": "helthy ",
+      "category": "sweet",
+      "description": "Un paragraphe est une section de texte en prose vouée au  plusieurs phrases, suivant. Sur le plan ».",
+      "image": "https://img.cuisineaz.com/1024x1024/2014/04/02/i93748-cupcakes-au-chocolat.jpg",
+      "id": 5
+    },
+    {
+      "name": "test4",
+      "price": 10,
+      "color": "helthy ",
+      "category": "sweet",
+      "description": "dfgfd",
+      "image": "https://juliemarieeats.com/wp-content/uploads/2023/01/Chocolate-and-Vanilla-Cupcakes-11-scaled.jpg",
+      "id": 6
+    },
+    {
+      "name": "capcake",
+      "price": 20,
+      "color": "red",
+      "category": "sweet",
+      "description": "sdfghjklkjhgfdsq",
+      "image": "https://cdn.pixabay.com/photo/2016/04/26/16/58/coffe-1354786__340.jpg",
+      "id": 7
+    }
+  ],
+  "user": [
+    {
+      "name": "dd",
+      "email": "omaima@gmail.com",
+      "password": "123456",
+      "id": 1
+    },
+    {
+      "name": "rio",
+      "email": "rio@gmail.com",
+      "password": "123456",
+      "id": 2
+    },
+    {
+      "name": "dddd",
+      "email": "dddd@gmail.com",
+      "password": "123456",
+      "id": 3
+    },
+    {
+      "name": "ff",
+      "email": "ff@gmail.com",
+      "password": "123456",
+      "id": 4
+    },
+    {
+      "name": "rio",
+      "email": "rio2@gmail.com",
+      "password": "123456",
+      "id": 5
+    },
+    {
+      "name": "test",
+      "email": "test@gmail.com",
+      "password": "123456",
+      "id": 6
+    },
+    {
+      "name": "test2",
+      "email": "test2@gmail.com",
+      "password": "123456",
+      "id": 7
+    },
+    {
+      "name": "ghjklmù",
+      "email": "houce@gmail.com",
+      "password": "123456",
+      "id": 8
+    },
+    {
+      "name": "",
+      "email": "",
+      "password": "",
+      "id": 9
+    }
+  ],
+  "cart": [
+    {
+      "name": "test3",
+      "price": "10",
+      "color": "helthy ",
+      "category": "sweet",
+      "description": "Un paragraphe est une section de texte en prose vouée au  plusieurs phrases, suivant. Sur le plan ».",
+      "image": "https://img.cuisineaz.com/1024x1024/2014/04/02/i93748-cupcakes-au-chocolat.jpg",
+      "quantity": 1,
+      "productId": 5,
+      "userId": null,
+      "id": 5
+    },
+    {
+      "name": "test4",
+      "price": 10,
+      "color": "helthy ",
+      "category": "sweet",
+      "description": "dfgfd",
+      "image": "https://juliemarieeats.com/wp-content/uploads/2023/01/Chocolate-and-Vanilla-Cupcakes-11-scaled.jpg",
+      "quantity": 1,
+      "userId": 2,
+      "productId": 6,
+      "id": 6
+    }
+  ],
+  "order": [
+    {
+      "email": "20110375",
+      "totalPrice": 150,
+      "userId": 2,
+      "id": 1
+    }
+  ],
+  "orders": [
+    {
+      "email": "",
+      "address": "",
+      "contact": "",
+      "totalPrice": 110,
+      "userId": 2,
+      "id": 3
+    },
+    {
+      "email": "",
+      "address": "",
+      "contact": "",
+      "totalPrice": 10,
+      "userId": {
+        "name": "rio",
+        "email": "rio@gmail.com",
+        "password": "123456",
+        "id": 2
+      },
+      "id": 4
+    },
+    {
+      "email": "rio@gmail.com",
+      "address": "fghj",
+      "contact": "sz",
+      "totalPrice": 10,
+      "userId": {
+        "name": "rio",
+        "email": "rio@gmail.com",
+        "password": "123456",
+        "id": 2
+      },
+      "id": 5
+    },
+    {
+      "email": "",
+      "address": "",
+      "contact": "",
+      "totalPrice": 110,
+      "userId": {
+        "name": "rio",
+        "email": "rio@gmail.com",
+        "password": "123456",
+        "id": 2
+      },
+      "id": 6
+    },
+    {
+      "email": "",
+      "address": "",
+      "contact": "",
+      "totalPrice": 110,
+      "userId": {
+        "name": "rio",
+        "email": "rio@gmail.com",
+        "password": "123456",
+        "id": 2
+      },
+      "id": 7
+    },
+    {
+      "email": "",
+      "address": "",
+      "contact": "",
+      "totalPrice": 10,
+      "userId": {
+        "name": "rio",
+        "email": "rio@gmail.com",
+        "password": "123456",
+        "id": 2
+      },
+      "id": 8
+    }
+  ],
+  "category": []
+}

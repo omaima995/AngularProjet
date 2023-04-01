@@ -1,0 +1,37 @@
+ .user-auth h1 {
+    text-align: center;
+    margin-bottom: 50px;
+    margin-top: 80px;
+    color: #FE5C36;
+    font-family: Narkisim;
+    text-decoration: underline #ddd;
+}
+.user-auth {
+    margin-bottom: 100px;
+
+}
+.user-auth a{
+    color: #198754;
+    cursor: pointer;
+
+}
+.user-auth a:hover{
+    color: #FE5C36;
+    cursor: pointer;
+
+}
+.invalid-input{
+    color: red;
+    font-size: 12px;
+    margin-top: -20px;
+
+}
+button:disabled{
+    cursor: not-allowed ;
+}
+
+.input {
+    background-color: #ffc10714 !important;
+    /* height: 48%; */
+    border-radius: 10px !important;
+}
