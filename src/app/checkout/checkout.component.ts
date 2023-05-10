@@ -2,6 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import {cart, order } from '../data-type';
 import { Router } from '@angular/router';
 import { ProductService } from '../service/product.service';
+import {CartPageComponent} from "../cart-page/cart-page.component";
 
 
 @Component({
@@ -11,13 +12,14 @@ import { ProductService } from '../service/product.service';
 })
 export class CheckoutComponent implements OnInit {
   totalPrice: number | undefined;
-  
   cartData: cart[]|undefined;
-  orderMessage:string|undefined
+  orderMessage:string|undefined;
+
 
   constructor(
     private product: ProductService,
-    private route:Router
+    private route:Router,
+    private cartPage:CartPageComponent
   ) {}
 
   ngOnInit(): void {
@@ -25,18 +27,21 @@ export class CheckoutComponent implements OnInit {
       let price = 0;
       result.forEach((item) => {
         if (item.quantity) {
-          price = price + (+item.price * +item.quantity);
+
+          price = price+ (+item.price* +item.quantity);
+
         }
+        console.log(price)
       });
 
-      this.totalPrice = price + price / 10  - price / 10;
+      this.totalPrice = price+ 3
       console.warn(this.totalPrice);
     });
   }
 
   orderNow(data: { email: string; adress: string; contact: string }) {
     let user = localStorage.getItem('user');
-    let userId = user && JSON.parse(user);
+    let userId = user && JSON.parse(user).id;
 if (this.totalPrice) {
   let orderData: order = {
     ...data,
@@ -49,7 +54,7 @@ if (this.totalPrice) {
     setTimeout(() => {
      item.id && this.product.deleteCartItems(item.id)
 
-      
+
     },600);
 
   })
@@ -60,9 +65,9 @@ if (this.totalPrice) {
       setTimeout(() => {
         this.route.navigate(['/my-order'])
         this.orderMessage=undefined
-        
+
       },2000);
-      
+
     }
   })
 }

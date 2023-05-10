@@ -126,34 +126,85 @@
       "email": "",
       "password": "",
       "id": 24
+    },
+    {
+      "name": "Mohamed Ellajmi",
+      "email": "mlajmi52@yahoo.com",
+      "password": "azerty",
+      "id": 25
+    },
+    {
+      "name": "",
+      "email": "",
+      "password": "",
+      "id": 26
+    },
+    {
+      "name": "",
+      "email": "",
+      "password": "",
+      "id": 27
+    },
+    {
+      "name": "admin",
+      "email": "admin@gmail.com",
+      "password": "123456",
+      "id": 28
     }
   ],
   "products": [
     {
-      "name": "test3",
-      "price": "10",
-      "color": "helthy ",
-      "category": "sweet",
-      "description": "Un paragraphe est une section de texte en prose vouée au  plusieurs phrases, suivant. Sur le plan ».",
-      "image": "https://img.cuisineaz.com/1024x1024/2014/04/02/i93748-cupcakes-au-chocolat.jpg",
+      "name": "Salad César",
+      "price": "12",
+      "color": "green",
+      "category": "salty",
+      "description": " This salad is a seafood lover's dream! We start with fresh romaine lettuce",
+      "image": "https://www.cookomix.com/wp-content/uploads/2022/07/salade-cesar-thermomix-800x600.jpg",
+      "id": 2
+    },
+    {
+      "name": "CupCake",
+      "price": "7",
+      "color": "red",
+      "category": "Sweet ",
+      "description": "This cupcake is like a burst of fresh strawberries in every bite! It's made with a light strawberry ",
+      "image": "https://assets.afcdn.com/recipe/20131116/33422_w1024h1024c1cx320cy480.webp",
+      "id": 3
+    },
+    {
+      "name": "Pizza",
+      "price": 16,
+      "color": "red",
+      "category": "salty",
+      "description": "Our Hawaiian pizza is a tropical treat! It features crispy thin crust, tangy tomato sauce, melty mozzarella cheese,",
+      "image": "https://img.cuisineaz.com/660x660/2018/02/28/i136025-pizza-legere.jpeg",
+      "id": 4
+    },
+    {
+      "name": "Lasagne",
+      "price": "18",
+      "color": "green",
+      "category": "Sally",
+      "description": "Our classic Beef Lasagna features layers of tender pasta, homemade beef bolognese sauce, ",
+      "image": "https://assets.afcdn.com/recipe/20200408/109520_w1024h1024c1cx1866cy2800.jpg",
       "id": 5
     },
     {
-      "name": "test4",
-      "price": 10,
-      "color": "helthy ",
-      "category": "sweet",
-      "description": "dfgfd",
-      "image": "https://juliemarieeats.com/wp-content/uploads/2023/01/Chocolate-and-Vanilla-Cupcakes-11-scaled.jpg",
+      "name": "Baguette ",
+      "price": "15",
+      "color": "green",
+      "category": "sdqfgfhgh",
+      "description": "",
+      "image": "https://www.cuisinetunisienne.tn/wp-content/uploads/2023/02/Recette-Baguette-Farcie-Tunisienne.jpeg",
       "id": 6
     },
     {
-      "name": "capcake",
+      "name": "dfghjkl",
       "price": 20,
-      "color": "red",
+      "color": "yellow",
       "category": "sweet",
-      "description": "sdfghjklkjhgfdsq",
-      "image": "https://cdn.pixabay.com/photo/2016/04/26/16/58/coffe-1354786__340.jpg",
+      "description": "qsdfg",
+      "image": "https://sallysbakingaddiction.com/wp-content/uploads/2017/06/moist-chocolate-cupcakes-5.jpg",
       "id": 7
     }
   ],
@@ -211,32 +262,68 @@
       "email": "",
       "password": "",
       "id": 9
+    },
+    {
+      "name": "omaima",
+      "email": "omaima95@gmail.com",
+      "password": "123456",
+      "id": 10
+    },
+    {
+      "name": "iit2023",
+      "email": "iit2023@gmail.com",
+      "password": "123",
+      "id": 11
+    },
+    {
+      "name": "do",
+      "email": "do@gmail.com",
+      "password": "123456",
+      "id": 12
+    },
+    {
+      "name": "",
+      "email": "",
+      "password": "",
+      "id": 13
     }
   ],
   "cart": [
     {
-      "name": "test3",
-      "price": "10",
-      "color": "helthy ",
-      "category": "sweet",
-      "description": "Un paragraphe est une section de texte en prose vouée au  plusieurs phrases, suivant. Sur le plan ».",
-      "image": "https://img.cuisineaz.com/1024x1024/2014/04/02/i93748-cupcakes-au-chocolat.jpg",
+      "name": "CupCake",
+      "price": "7",
+      "color": "red",
+      "category": "Sweet ",
+      "description": "This cupcake is like a burst of fresh strawberries in every bite! It's made with a light strawberry ",
+      "image": "https://assets.afcdn.com/recipe/20131116/33422_w1024h1024c1cx320cy480.webp",
       "quantity": 1,
-      "productId": 5,
+      "productId": 3,
       "userId": null,
-      "id": 5
+      "id": 1
     },
     {
-      "name": "test4",
-      "price": 10,
-      "color": "helthy ",
-      "category": "sweet",
-      "description": "dfgfd",
-      "image": "https://juliemarieeats.com/wp-content/uploads/2023/01/Chocolate-and-Vanilla-Cupcakes-11-scaled.jpg",
+      "name": "CupCake",
+      "price": "7",
+      "color": "red",
+      "category": "Sweet ",
+      "description": "This cupcake is like a burst of fresh strawberries in every bite! It's made with a light strawberry ",
+      "image": "https://assets.afcdn.com/recipe/20131116/33422_w1024h1024c1cx320cy480.webp",
       "quantity": 1,
       "userId": 2,
-      "productId": 6,
-      "id": 6
+      "productId": 3,
+      "id": 3
+    },
+    {
+      "name": "Lasagne",
+      "price": "18",
+      "color": "green",
+      "category": "Sally",
+      "description": "Our classic Beef Lasagna features layers of tender pasta, homemade beef bolognese sauce, ",
+      "image": "https://assets.afcdn.com/recipe/20200408/109520_w1024h1024c1cx1866cy2800.jpg",
+      "quantity": 3,
+      "userId": 2,
+      "productId": 5,
+      "id": 4
     }
   ],
   "order": [
@@ -248,14 +335,6 @@
     }
   ],
   "orders": [
-    {
-      "email": "",
-      "address": "",
-      "contact": "",
-      "totalPrice": 110,
-      "userId": 2,
-      "id": 3
-    },
     {
       "email": "",
       "address": "",
@@ -320,7 +399,77 @@
         "id": 2
       },
       "id": 8
+    },
+    {
+      "email": "mlajmi52@yahoo.com",
+      "address": "sfacx",
+      "contact": "WW",
+      "totalPrice": 20,
+      "userId": {
+        "name": "rio",
+        "email": "rio@gmail.com",
+        "password": "123456",
+        "id": 2
+      },
+      "id": 9
+    },
+    {
+      "email": "mlajmi52@yahoo.com",
+      "address": "sfacx",
+      "contact": "WW",
+      "totalPrice": 20,
+      "userId": {
+        "name": "rio",
+        "email": "rio@gmail.com",
+        "password": "123456",
+        "id": 2
+      },
+      "id": 10
+    },
+    {
+      "email": "mlajmi52@yahoo.com",
+      "address": "sfacx",
+      "contact": "WW",
+      "totalPrice": 20,
+      "userId": {
+        "name": "rio",
+        "email": "rio@gmail.com",
+        "password": "123456",
+        "id": 2
+      },
+      "id": 11
+    },
+    {
+      "email": "",
+      "address": "",
+      "contact": "",
+      "totalPrice": 43,
+      "userId": 10,
+      "id": 18
+    },
+    {
+      "email": "",
+      "address": "",
+      "contact": "",
+      "totalPrice": 43,
+      "userId": 10,
+      "id": 19
+    },
+    {
+      "email": "rio@gmail.com",
+      "address": "aqdsfghjk",
+      "contact": "1234658585",
+      "totalPrice": 80,
+      "userId": 2,
+      "id": 21
+    },
+    {
+      "email": "",
+      "address": "",
+      "contact": "",
+      "totalPrice": 64,
+      "userId": 2,
+      "id": 22
     }
-  ],
-  "category": []
+  ]
 }

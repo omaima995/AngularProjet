@@ -1,8 +1,8 @@
 <div class="container">
     <div class="row">
       <div class="col-md-6 mx-auto">
-        <div class="card Update-product">
-          <h1 class="card-title text-center">update product</h1>
+        <div class="card Update-product item-description ">
+          <h1 class="card-title text-center title-checkout">Update product</h1>
           <div class="card-body">
             <form #addProduct="ngForm" (ngSubmit)="submit(addProduct.value)" class="common-form">
               <p class="message">{{productMessage}}</p>
@@ -31,9 +31,7 @@
                 <mat-label>Product Image URL</mat-label>
               </mat-form-field>
               <div class="text-center">
-          
-  
-                <button mat-raised-button color="primary" class="form-button bg-info">Update Product</button>
+                <button class="btn btn-outline-success material-button input-checkout max-width" type="submit">Update Product</button>
               </div>
             </form>
           </div>

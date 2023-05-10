@@ -28,7 +28,7 @@ export class UserAuthComponent implements OnInit {
     //console.warn(data);
     this.user.userlogin(data);
     this.user.invaliduserAuth.subscribe((result)=>{
-      console.warn("appel",result)
+      //console.warn("appel",result)
       if(result){
         this.authError="please Enter valid user details "
 
@@ -64,7 +64,7 @@ export class UserAuthComponent implements OnInit {
         setTimeout(() => {
           this.product.addToCart(cartData).subscribe((result)=>{
             if (result){
-              console.warn("item in db")
+              //console.warn("item in db")
             }
           })
          

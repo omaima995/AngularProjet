@@ -18,13 +18,13 @@ export class CartPageComponent implements OnInit {
       delivery: 0 ,
       total: 0 ,
   }
-  
+
   constructor(private product:ProductService, private router:Router ){
 
   }
   ngOnInit(): void {
     this.loaddetails()
- 
+
   }
   checkout(){
     this.router.navigate(['/checkout'])
@@ -42,11 +42,9 @@ loaddetails(){
 
   })
   //console.warn(price)
-  this.priceSummary.price=price; 
-  this.priceSummary.discount = price/10;
-  this.priceSummary.tax=price*0.05
-  this.priceSummary.delivery=7;
-  this.priceSummary.total=price+(price/10)+this.priceSummary.discount+this.priceSummary.tax+this.priceSummary.delivery-(price/10);
+  this.priceSummary.price=price;
+  this.priceSummary.delivery=3;
+  this.priceSummary.total=price+this.priceSummary.delivery;
   //console.warn(this.priceSummary)
   if(!this.cartData.length){
     this.router.navigate(['/'])

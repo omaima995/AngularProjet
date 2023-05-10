@@ -33,6 +33,7 @@ import { CartPageComponent } from './cart-page/cart-page.component';
 import { CheckoutComponent } from './checkout/checkout.component';
 import { MyOrdesComponent } from './my-ordes/my-ordes.component';
 import { DeleatProductDialogComponentComponent } from './deleat-product-dialog-component/deleat-product-dialog-component.component';
+import { FooterComponent } from './footer/footer.component';
 
 
 
@@ -55,8 +56,9 @@ import { DeleatProductDialogComponentComponent } from './deleat-product-dialog-c
     CheckoutComponent,
     MyOrdesComponent,
     DeleatProductDialogComponentComponent,
-    
-   
+    FooterComponent,
+
+
   ],
   imports: [
     BrowserModule,
@@ -80,18 +82,18 @@ import { DeleatProductDialogComponentComponent } from './deleat-product-dialog-c
     FormsModule,
     ReactiveFormsModule,
     FontAwesomeModule,
-    
-    
-    
 
 
 
-    
-  
+
+
+
+
+
 
 
   ],
-  providers: [],
+  providers: [CartPageComponent],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

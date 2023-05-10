@@ -4,14 +4,14 @@
 <div *ngIf="showLogin" class="slogin">
     <h1 class="mb-3">Seller Login</h1>
     <p class="errer">{{authErreur}}</p>
-    <form #sellerLogin="ngForm" (ngSubmit)="Login(sellerLogin.value)" class="common-form">
+    <form #sellerLogin="ngForm" (ngSubmit)="Login(sellerLogin.value)" class="common-form" >
       <mat-form-field appearance="fill" class="mb-3">
         <mat-label>Email</mat-label>
-        <input matInput type="text" ngModel name="email" placeholder="Enter Email">
+        <input matInput type="text" ngModel name="email" placeholder="Enter Email" #email="ngModel" required>
       </mat-form-field>
       <mat-form-field appearance="fill" class="mb-3">
         <mat-label>Password</mat-label>
-        <input matInput type="password" ngModel name="password" placeholder="Enter Password">
+        <input matInput type="password" ngModel name="password" placeholder="Enter Password" #password="ngModel" required>
       </mat-form-field>
       <button type="submit" class="btn btn-outline-success mt-4">login</button>
       
@@ -25,15 +25,15 @@
       <form #sellerSignup="ngForm" (ngSubmit)="signup(sellerSignup.value)" class="common-form">
         <mat-form-field appearance="fill" class="mb-3">
           <mat-label>Name</mat-label>
-          <input matInput type="text" ngModel name="name" placeholder="Enter Name">
+          <input matInput type="text" ngModel name="name" placeholder="Enter Name"  required>
         </mat-form-field>
         <mat-form-field appearance="fill" class="mb-3">
           <mat-label>Email</mat-label>
-          <input matInput type="text" ngModel name="email" placeholder="Enter Email">
+          <input matInput type="text" ngModel name="email" placeholder="Enter Email"  required>
         </mat-form-field>
         <mat-form-field appearance="fill" class="mb-3">
           <mat-label>Password</mat-label>
-          <input matInput type="password" ngModel name="password" placeholder="Enter Password">
+          <input matInput type="password" ngModel name="password" placeholder="Enter Password" >
         </mat-form-field>
         <button type="submit" class="btn btn-outline-success mt-4">Sign Up</button>
       

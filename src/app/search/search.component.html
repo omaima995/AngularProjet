@@ -1,15 +1,26 @@
-<div class ="row search-item" *ngFor="let item of searchResult">
-    <div class="col-sm-3">
-        <a routerLink="/details/{{item.id}}">
-        <img src="{{item.image}}" alt="">
-    </a>
-    </div>
-    <div class="col-sm-8 details">
-        <h6><a routerLink="/details/{{item.id}}">{{item.name}}</a></h6>
-        <p><b>{{item.price}}</b></p>
-        <p><span>{{item.color}}</span></p>
-        <p><span>{{item.category}}</span></p>
-        <p>{{item.description}}</p>
+
+<h3 class="title-checkout">Your Search Result</h3>
+<div class="col-sm-5 summary" *ngFor="let item of searchResult">
+    <div class="item-description">
+    <div class="details">
         
+        <div class ="row search-item" >
+            <div class="col-sm-3">
+                <a routerLink="/details/{{item.id}}">
+                <img src="{{item.image}}" alt="">
+            </a>
+            </div>
+            <div class="col-sm-6 details_result">
+                <h6 class="title"><a routerLink="/details/{{item.id}}">{{item.name}}</a></h6>
+                <p><span class="title-search">Prix:</span><span class="titredesc">{{item.price}}</span></p>
+                <p><span class="title-search">Color:</span><span class="titredesc">{{item.color}}</span></p>
+                <p><span class="title-search">Categorie:</span><span class="titredesc">{{item.category}}</span></p>
+                <p><span class="title-search">Description:</span><span class="titredesc">{{item.description}}</span></p>
+                
+            </div>
+        </div>
     </div>
+    
+   
+
 </div>
