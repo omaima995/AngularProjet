@@ -150,37 +150,26 @@
       "email": "admin@gmail.com",
       "password": "123456",
       "id": 28
-    },
-    {
-      "name": "dzdzdd",
-      "email": "aaaa",
-      "password": "aaaa",
-      "id": 29
-    },
-    {
-      "name": "dddd",
-      "email": "aaaa",
-      "password": "aaaa",
-      "id": 30
     }
   ],
   "products": [
     {
-      "name": "Salad César",
-      "price": "12",
-      "color": "green",
-      "category": "salty",
-      "description": " This salad is a seafood lover's dream! We start with fresh romaine lettuce",
-      "image": "https://www.cookomix.com/wp-content/uploads/2022/07/salade-cesar-thermomix-800x600.jpg",
+      "name": "MONTRE GUESS FEMME LILY ACIER",
+      "price": "674",
+      "color": "Argent",
+      "category": "Femme",
+      "description": "L élégance et l'intrigue se rencontrent d  ans cette montre présentant un arrangement floral complexe sur le cadran analogique découpé. Complété par des accents de diamants sur le boîtier rond et le bracelet à maillons - Matière du bracelet: Acier - Matière du boîtier: Acier - Couleur du bracelet: Argent - Couleur du boîtier: Argent- Couleur du cadran: Argent- Verre: Minéral - Fermoir: Boucle dépliante - Mouvement: Quartz - Afficheur: Analogique - Étanchéité: 30 mètres (3ATM) - Taille du boîtier: Ø36mm - Garanti: 1 an",
+      "image": "https://chakrounwatch.com.tn/uploads/articles/MONTRE%20GUESS%20FEMME%20LILY%20ACIER-8503-0-1-1674903273.jpg",
       "id": 2
     },
     {
-      "name": "CupCake",
-      "price": "7",
-      "color": "red",
-      "category": "Sweet ",
-      "description": "This cupcake is like a burst of fresh strawberries in every bite! It's made with a light strawberry ",
-      "image": "https://assets.afcdn.com/recipe/20131116/33422_w1024h1024c1cx320cy480.webp",
+      "name": "MONTRE GC HOMME CHRONO SILICONE",
+      "price": "559",
+      "color": "Noir",
+      "category": "Homme ",
+      "souscategory": "Montre Silicone",
+      "description": "Adoptez l'esprit sportif Gc avec ce chronographe emblématique bicolore or rose et bleu / full black. La silhouette de cette montre est étonnamment masculine grâce à un cadran à motif carré avec des accents d'or rose, une lunette à multiples facettes en PVD , des détails de conception de vis emblématiques et un bracelet en silicone bleu /noir. Matière du bracelet: Matière du boîtier: Acier Couleur: Couleur du bracelet: Couleur du boîtier: Couleur du cadran: Verre: Minéral Fermoir: Simple Fonctionalité: Chronographe Mouvement: Quartz Afficheur: Analogique Étanchéité: 100 mètres (10 ATM) Taille du boîtier: Ø44mm Garanti: 2 ans ",
+      "image": "https://chakrounwatch.com.tn/uploads/articles/MONTRE%20GC%20HOMME%20CHRONO%20SILICONE-7868-0-1-1650878916.jpg",
       "id": 3
     },
     {
@@ -188,36 +177,68 @@
       "price": 16,
       "color": "red",
       "category": "salty",
-      "description": "Our Hawaiian pizza is a tropical treat! It features crispy thin crust, tangy tomato sauce, melty mozzarella cheese,",
-      "image": "https://img.cuisineaz.com/660x660/2018/02/28/i136025-pizza-legere.jpeg",
+      "description": "La maison GUESS vous dévoile cette Montre femme Guess de la collection LADIES TREND avec bracelet Acier. Elle resplendit grâce aux finitions soignées qui apportent de l'éclat à l'ensemble. Conçu entièrement en acier inoxydable, ce modèle présente un boîtier rond d'un diamètre de 36 mm. Il est surmonté d'un verre minéral reconnu par sa robustesse afin de protéger le cadran. Ce garde temps se distingue par son mécanisme visible a l'œil nu. Matière du bracelet: Acier Matière du boîtier: Acier Couleur du bracelet: Or Couleur du boîtier: Or Couleur du cadran: Or Verre: Minéral Fermoir: Boucle dépliante Mouvement: Quartz Afficheur: Analogique Étanchéité: 30 mètres (3ATM) Taille du boîtier: Ø36mm Garanti: 1 an ",
+      "image": "https://chakrounwatch.com.tn/uploads/articles/MONTRE%20GUESS%20FEMME%20LADIES%20TREND%20ACIER-8481-1-1-1674573513.jpg",
       "id": 4
     },
     {
-      "name": "Lasagne",
-      "price": "18",
-      "color": "green",
-      "category": "Sally",
-      "description": "Our classic Beef Lasagna features layers of tender pasta, homemade beef bolognese sauce, ",
-      "image": "https://assets.afcdn.com/recipe/20200408/109520_w1024h1024c1cx1866cy2800.jpg",
-      "id": 5
+      "name": "MONTRE FERRO FEMME ACIER",
+      "price": "160",
+      "color": "Or",
+      "category": "Femme",
+      "description": "Apportez une touche d'élégance à votre look avec la montre FERRO Matière du bracelet: Acier Matière du boîtier: Acier Couleur du bracelet: Or Couleur du boîtier: Or Couleur du cadran: Blanc Verre: Minéral Fermoir: Boucle dépliante Mouvement: Quartz Afficheur: Analogique Étanchéité: 30 mètres (3ATM) Garanti: 1 an",
+      "image": "https://chakrounwatch.com.tn/uploads/articles/MONTRE%20ESPRIT%20FEMME%20ACIER-8448-1-1-1673608331.jpg",
+      "id": 8
     },
     {
-      "name": "Baguette ",
-      "price": "15",
-      "color": "green",
-      "category": "sdqfgfhgh",
-      "description": "",
-      "image": "https://www.cuisinetunisienne.tn/wp-content/uploads/2023/02/Recette-Baguette-Farcie-Tunisienne.jpeg",
-      "id": 6
+      "name": "MONTRE FERRO FEMME ACIER",
+      "price": 475,
+      "color": "Or",
+      "category": "Femme",
+      "souscategory": "Montre Acier",
+      "description": "Apportant une touche contemporaine à un design élégant, cette montre analogique pour femme d'Esprit . La sophistication inégalée de cette montre analogique envoûtera à coup sûr les connaisseurs de mode. Le cadran a été conçu d'une manière distincte, ce qui en fait un appareil qui vaut le détour. Matière du bracelet: Acier Matière du boîtier: Acier Couleur du bracelet: Argent - Doré Couleur du boîtier: Or Couleur du cadran: Blanc Fermoir: Boucle dépliante Fonctionalité: Dateur Mouvement: Quartz Afficheur: Analogique Étanchéité: 50 mètres (5 ATM) Taille du boîtier: Ø32mm Garanti: 2 ans",
+      "image": "https://chakrounwatch.com.tn/uploads/articles/MONTRE%20ESPRIT%20FEMME%20ACIER-8448-1-1-1673608331.jpg",
+      "id": 10
     },
     {
-      "name": "dfghjkl",
-      "price": 20,
-      "color": "yellow",
-      "category": "sweet",
-      "description": "qsdfg",
-      "image": "https://sallysbakingaddiction.com/wp-content/uploads/2017/06/moist-chocolate-cupcakes-5.jpg",
-      "id": 7
+      "name": "MONTRE FERRO FEMME ACIER",
+      "price": 499,
+      "color": "Or",
+      "category": "Femme",
+      "souscategory": "Montre Acier",
+      "description": "Cette montre en acier inoxydable avec un cadran carré et un bracelet milanais crée un look élégant et épuré. Matière du bracelet: Acier Matière du boîtier: Acier Couleur du bracelet: Or Couleur du boîtier: Or Couleur du cadran: Blanc Verre: Minéral Fermoir: Boucle dépliante Mouvement: Quartz Afficheur: Analogique Étanchéité: 30 mètres (3ATM) Taille du boîtier: Ø28mm Garanti: 2 ans",
+      "image": "https://chakrounwatch.com.tn/uploads/articles/MONTRE%20ESPRIT%20FEMME%20ACIER-8438-1-1-1673433835.jpg",
+      "id": 11
+    },
+    {
+      "name": "MONTRE POLOEXCHANGE HOMME ACIER",
+      "price": 499,
+      "color": "Argent",
+      "category": "Homme",
+      "souscategory": "Montre Acier",
+      "description": "La marque poloexchange est la marque plus connue dans la monde avec les nouvelles modèles des accessoires pour femmes plus paraissaient les montres de matériau de haute qualité avec sa boîtier en acier inoxydable, les bracelets en cuir et les cadrans en matériau du visage à verre minéral. Son design ergonomique et confortable à porter et léger qui s'adapte parfaitement à votre poignet. Son étanchéité 3 ATM résistant aux éclaboussures et la pluie, le lavage des mains et le contact occasionnel avec l'eau. Matière du bracelet: Acier Matière du boîtier: Acier Couleur du bracelet: Argent Couleur du boîtier: Argent Couleur du cadran: Noir Verre: Minéral Fermoir: Boucle dépliante Mouvement: Quartz Afficheur: Analogique Étanchéité: 30 mètres (3ATM) Garanti: 1 an",
+      "image": "https://chakrounwatch.com.tn/uploads/articles/MONTRE%20POLOEXCHANGE%20HOMME%20ACIER-8210-1-1-1665583070.jpg",
+      "id": 12
+    },
+    {
+      "name": "MONTRE QNQ HOMME SILICONE",
+      "price": 75,
+      "color": "Noir",
+      "category": "Homme",
+      "souscategory": "Montre Silicone",
+      "description": "Cette montre Q&Q apporte de la tendance et du look au quotidien. Elle est l'outil parfait pour apprendre à lire l'heure grâce à son cadran pédagogique qui permet de faire des progrès fulgurants. En Plus, elle est waterproof 100 mètres de résistance à l'eau, résistant aux contacts accidentels avec l'eau, tels que les éclaboussures de pluie et la natation. Matière du bracelet: Silicone Matière du boîtier: Résine Couleur du bracelet: NoirCouleur du boîtier: Noir Couleur du cadran: Rouge Verre: Minéral Fermoir: Simple Mouvement: Quartz Afficheur: Analogique Étanchéité: 100 mètres (10 ATM) Taille du boîtier: Ø44mm Garanti: 1 an",
+      "image": "https://chakrounwatch.com.tn/uploads/articles/MONTRE%20QNQ%20HOMME%20SILICONE-8295-1-1-1667831052.jpg",
+      "id": 13
+    },
+    {
+      "name": "MONTRE QNQ HOMME SILICONE",
+      "price": 89,
+      "color": "Noir",
+      "category": "Enfants",
+      "souscategory": "Montre Silicone",
+      "description": "Cette montre Q&Q apporte de la tendance et du look au quotidien. Elle est l'outil parfait pour apprendre à lire l'heure grâce à son cadran pédagogique qui permet de faire des progrès fulgurants. En Plus, elle est waterproof 100 mètres de résistance à l'eau, résistant aux contacts accidentels avec l'eau, tels que les éclaboussures de pluie et la natation. Matière du bracelet: Silicone Matière du boîtier: Résine Couleur du bracelet: NoirCouleur du boîtier: Noir Couleur du cadran: Rouge Verre: Minéral Fermoir: Simple Mouvement: Quartz Afficheur: Analogique Étanchéité: 100 mètres (10 ATM) Taille du boîtier: Ø44mm Garanti: 1 an",
+      "image": "https://chakrounwatch.com.tn/uploads/articles/MONTRE%20QNQ%20ENFANT%20SILICONE-3194-0-1-1645441902.jpg",
+      "id": 14
     }
   ],
   "user": [
@@ -298,54 +319,6 @@
       "email": "",
       "password": "",
       "id": 13
-    },
-    {
-      "name": "aaaa",
-      "email": "bbb",
-      "password": "aaaa",
-      "id": 14
-    },
-    {
-      "name": "salah",
-      "email": "aaaa",
-      "password": "aaaa",
-      "id": 15
-    },
-    {
-      "name": "omar",
-      "email": "omar@gmail.com",
-      "password": "123456",
-      "id": 16
-    },
-    {
-      "name": "d",
-      "email": "aaaa",
-      "password": "aaaa",
-      "id": 17
-    },
-    {
-      "name": "aaaa",
-      "email": "dz",
-      "password": "aaaa",
-      "id": 18
-    },
-    {
-      "name": "aaaa",
-      "email": "salah@salah.com",
-      "password": "aaaa",
-      "id": 19
-    },
-    {
-      "name": "",
-      "email": "",
-      "password": "",
-      "id": 20
-    },
-    {
-      "name": "zdqzd",
-      "email": "salah@salah.com",
-      "password": "dzqdzqdqzd",
-      "id": 21
     }
   ],
   "cart": [
@@ -372,54 +345,6 @@
       "userId": 2,
       "productId": 3,
       "id": 3
-    },
-    {
-      "name": "Lasagne",
-      "price": "18",
-      "color": "green",
-      "category": "Sally",
-      "description": "Our classic Beef Lasagna features layers of tender pasta, homemade beef bolognese sauce, ",
-      "image": "https://assets.afcdn.com/recipe/20200408/109520_w1024h1024c1cx1866cy2800.jpg",
-      "quantity": 3,
-      "userId": 2,
-      "productId": 5,
-      "id": 4
-    },
-    {
-      "name": "Pizza",
-      "price": 16,
-      "color": "red",
-      "category": "salty",
-      "description": "Our Hawaiian pizza is a tropical treat! It features crispy thin crust, tangy tomato sauce, melty mozzarella cheese,",
-      "image": "https://img.cuisineaz.com/660x660/2018/02/28/i136025-pizza-legere.jpeg",
-      "quantity": 1,
-      "userId": 18,
-      "productId": 4,
-      "id": 5
-    },
-    {
-      "name": "Baguette ",
-      "price": "15",
-      "color": "green",
-      "category": "sdqfgfhgh",
-      "description": "",
-      "image": "https://www.cuisinetunisienne.tn/wp-content/uploads/2023/02/Recette-Baguette-Farcie-Tunisienne.jpeg",
-      "quantity": 1,
-      "userId": 18,
-      "productId": 6,
-      "id": 6
-    },
-    {
-      "name": "Salad César",
-      "price": "12",
-      "color": "green",
-      "category": "salty",
-      "description": " This salad is a seafood lover's dream! We start with fresh romaine lettuce",
-      "image": "https://www.cookomix.com/wp-content/uploads/2022/07/salade-cesar-thermomix-800x600.jpg",
-      "quantity": 1,
-      "userId": 18,
-      "productId": 2,
-      "id": 7
     }
   ],
   "order": [
