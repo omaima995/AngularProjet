@@ -1,58 +1,173 @@
 <div class="container cartpage">
-
-        <h1 class="text">Cart Page</h1>
-        <br>
-            <div class="row">
-
-                <div class="col-sm-8 details">
-                    <table class="table table-striped">
-                        <thead>
-                            <tr class="text-center">
-                                <th colspan="1">Image</th>
-                                <th colspan="1">Name</th>
-                                <th colspan="2" style="
-                    
-                                padding-left: 35px;
-                            ">Price</th>
-                                <th colspan="3">Action</th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            <tr *ngFor="let cart of cartData">
-                                <td colspan="1">
-                                    <img class="img-tabel" src ={{cart.image}}>
-                                </td>
-                                <td colspan="1">
-                                    <span>{{cart.name}}</span>
-                                </td>
-                                <td colspan="1">
-                                    <span>Price:{{cart.price}}</span>
-                                </td>
-                                <td colspan="é">
-                                    <span>Quantity:{{cart.quantity}}</span>
-                                </td>
-                                <td colspan="2">
-                                    <button class="form-button btn btn-outline-danger" (click)="removeToCart(cart.id)">Remove to cart</button>
-                                </td>
-                            </tr>
-                        </tbody>
-                    </table>
-
-                </div>
-                <div class="col-sm-4 summary">
-                    <div class="item-description">
-                    <div class="details">
-                        <h3 class="price-product">Your Bill </h3>
-                    </div>
-
-                    <ul>
-                        <li><span>Amount: </span><span>{{priceSummary.price}}</span></li>
-                        <li><span>Delivery</span><span>{{priceSummary.delivery}}</span></li>
-                        <li><span><h4>Total</h4></span><span><h4>{{priceSummary.total}}</h4></span></li>
-                        <button (click)="checkout()" class="max-width btn btn-outline-success">Checkout</button>
-                    </ul>
-                </div>
-                </div>
-            </div>
+  <h1 class="text">Cart Page</h1>
+  <br />
+  <div class="container cartpage">
+    
+    <div class="d-flex justify-content-center"> <!-- Added class "d-flex justify-content-center" -->
+      <div class="col-sm-8 details">
+        <table class="table table-striped">
+          <thead>
+            <tr>
+              <th class="text-center">Image</th>
+              <th class="text-center">Name</th>
+              <th class="text-center">Price</th>
+              <th class="text-center">Quantity</th>
+              <th colspan="2" class="text-center">Action</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr *ngFor="let cart of cartData">
+              <td>
+                <img class="img-tabel" src="{{ cart.image }}" />
+              </td>
+              <td class="text-center">{{ cart.name }}</td>
+              <td class="text-center">{{ cart.price }}</td>
+              <td class="text-center">{{ cart.quantity }}</td>
+              <td colspan="2" class="text-center">
+                <button
+                  class="form-button btn btn-outline-danger"
+                  (click)="removeToCart(cart.id)"
+                >
+                  Remove to cart
+                </button>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+    <!-- <div class="col-sm-4 summary">
+      <div class="item-description">
+        <div class="details">
+          <h3 class="price-product">Your Bill</h3>
         </div>
-
+        <ul>
+          <li><span>Amount:</span> <span>{{ priceSummary.price }}</span></li>
+          <li><span>Delivery:</span> <span>{{ priceSummary.delivery }}</span></li>
+          <li>
+            <span><h4>Total</h4></span>
+            <span><h4>{{ priceSummary.total }}</h4></span>
+          </li>
+        </ul>
+        <button (click)="checkout()" class="max-width btn btn-outline-success">Checkout</button>
+      </div>
+    </div> -->
+  </div>
+  
+  <!DOCTYPE html>
+  <html lang="en">
+  
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Centered Card</title>
+    <!-- Add Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <!-- Add Font Awesome CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+    <style>
+      .card {
+        max-width: 500px;
+        margin: 0 auto;
+      }
+    </style>
+  </head>
+  
+  <body>
+    <div class="container">
+      <div class="row justify-content-center">
+        <div class="col-md-6">
+          <div class="card">
+            <div class="card-header bg-black"></div>
+            <div class="card-body">
+              <div class="container">
+                <div class="row">
+                    <div class="col-xl-12 d-flex align-items-center">
+                      <a routerLink="/"><img src="../assets/images/Logopng1.png" alt="Logo" class="img-fluid" width="100px"></a>
+                      <ul class="list-unstyled ml-auto">
+                        <li style="font-size: 30px; color: rgb(69, 67, 67);">Company</li>
+                        <li>Golden Watch</li>
+                        <li>123-456-789</li>
+                        <li>mail@mail.com</li>
+                      </ul>
+                    </div>
+                  </div>
+                  <br>
+                  
+                <div class="row text-center">
+                  <h3 class="text-uppercase text-center mt-3" style="font-size: 40px;">Invoice</h3>
+                  <p>123456789</p>
+                </div>
+                <div class="row mx-3">
+                  <table class="table">
+                    <thead>
+                      <tr>
+                        <th scope="col">Description</th>
+                        <th scope="col">Amount</th>
+                        <th scope="col">Delivery</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td>Montre Super 15 wat</td>
+                        <td><i class="fas fa-dollar-sign"></i> {{ priceSummary.price }}</td>
+                        <td>{{ priceSummary.delivery }}</td>
+                      </tr>
+                      <tr>
+                        <td>Montre SuperW 155 wat</td>
+                        <td><i class="fas fa-dollar-sign"></i> {{ priceSummary.price }}</td>
+                        <td>{{ priceSummary.delivery }}</td>
+                      </tr>
+                      <tr>
+                        <td>Montre Magique  SuperW 135 wat</td>
+                        <td><i class="fas fa-dollar-sign"></i> {{ priceSummary.price }}</td>
+                        <td>{{ priceSummary.delivery }}</td>
+                      </tr>
+                      <tr>
+                        <td>Montre Métalle SuperW 120 wat</td>
+                        <td><i class="fas fa-dollar-sign"></i> {{ priceSummary.price }}</td>
+                        <td>{{ priceSummary.delivery }}</td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+                <div class="row">
+                  <div class="col-xl-8">
+                    <ul class="list-unstyled float-end me-0">
+                      <li>
+                        <span class="me-3 float-start">Total Amount:</span><i class="fas fa-dollar-sign"></i> {{ priceSummary.total }}
+                      </li>
+                      <li> <span class="me-5">Discount:</span><i class="fas fa-dollar-sign"></i> 500,00</li>
+                      <li><span class="float-start" style="margin-right: 35px;">Shipment:</span><i
+                          class="fas fa-dollar-sign"></i> 500,00</li>
+                    </ul>
+                  </div>
+                </div>
+                <hr>
+                <div class="row">
+                  <div class="col-xl-8" style="margin-left:60px">
+                    <p class="float-end"
+                      style="font-size: 30px; color: red; font-weight: 400;font-family: Arial, Helvetica, sans-serif;">
+                      Total:
+                      <span><i class="fas fa-dollar-sign"></i> 6350,00</span></p>
+                  </div>
+                </div>
+                <div class="row mt-2 mb-5">
+                  <p class="fw-bold">Date: <span class="text-muted">23 June 20221</span></p>
+                  <p class="fw-bold mt-3">Signature:</p>
+                </div>
+              </div>
+            </div>
+            <div class="card-footer bg-black"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  
+    <!-- Add Bootstrap JS -->
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  </body>
+  
+  </html>
+  
+</div>

@@ -141,7 +141,7 @@ padding: 10px;
     margin: 15px;
     display: inline-block;
     border-radius: 10px;
-    box-shadow: 0px 2px 5px rgba(202, 37, 16,3);
+    box-shadow: 0px 2px 5px gray;
     transition: all 0.3s ease-in-out;
     max-height: 366px;
   }
@@ -237,5 +237,12 @@ margin-top: 10px;
         margin-bottom: 29px;
         font-family: Narkisim;
     }
+    .text-center {
+      text-align: center;
+    }
+    .details th.text-center {
+      text-align: center;
+    }
+    
     
     
