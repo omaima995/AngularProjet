@@ -1,0 +1,509 @@
+{
+  "seller": [
+    {
+      "name": "omaima Abdennadher",
+      "email": "omaima@gmail.com",
+      "password": "123456",
+      "id": 1
+    },
+    {
+      "name": "Mohamed Lajmi",
+      "email": "Mohamed@gmail.com",
+      "password": "123456",
+      "id": 2
+    },
+    {
+      "name": "Ahmed Abdennadher",
+      "email": "Ahmed@gmail.com",
+      "password": "123456",
+      "id": 3
+    },
+    {
+      "name": "amal",
+      "id": 4
+    },
+    {
+      "name": "imen",
+      "password": "123456",
+      "email": "imen@gmail.com",
+      "id": 5
+    },
+    {
+      "name": "houcem",
+      "password": "123456",
+      "email": "houcem@gmail.com",
+      "id": 6
+    },
+    {
+      "name": "rayen",
+      "password": "12365478",
+      "email": "rayen@gmail.com",
+      "id": 7
+    },
+    {
+      "name": "omaima",
+      "password": "123456",
+      "email": "omaima@gmail.com",
+      "id": 8
+    },
+    {
+      "name": "ahmed",
+      "password": "123456",
+      "email": "ahmed@gmail.com",
+      "id": 11
+    },
+    {
+      "name": "Ahmed Abdennadher",
+      "email": "Ahmed@gmail.com",
+      "password": "123456",
+      "id": 12
+    },
+    {
+      "name": "Ahmed Abdennadher",
+      "email": "Ahmed@gmail.com",
+      "password": "123456",
+      "id": 13
+    },
+    {
+      "id": 14
+    },
+    {
+      "name": "",
+      "password": "",
+      "email": "",
+      "id": 15
+    },
+    {
+      "name": "",
+      "password": "",
+      "email": "",
+      "id": 16
+    },
+    {
+      "name": "mohamed",
+      "password": "123456",
+      "email": "mohamedlajmi@gmail.com",
+      "id": 17
+    },
+    {
+      "name": "omaima",
+      "email": "omaymaabdennadher95@gmail.com",
+      "password": "123456",
+      "id": 18
+    },
+    {
+      "name": "",
+      "email": "",
+      "password": "",
+      "id": 19
+    },
+    {
+      "name": "",
+      "email": "",
+      "password": "",
+      "id": 20
+    },
+    {
+      "name": "",
+      "email": "",
+      "password": "",
+      "id": 21
+    },
+    {
+      "name": "",
+      "email": "",
+      "password": "",
+      "id": 22
+    },
+    {
+      "name": "",
+      "email": "",
+      "password": "",
+      "id": 23
+    },
+    {
+      "name": "",
+      "email": "",
+      "password": "",
+      "id": 24
+    },
+    {
+      "name": "Mohamed Ellajmi",
+      "email": "mlajmi52@yahoo.com",
+      "password": "azerty",
+      "id": 25
+    },
+    {
+      "name": "",
+      "email": "",
+      "password": "",
+      "id": 26
+    },
+    {
+      "name": "",
+      "email": "",
+      "password": "",
+      "id": 27
+    },
+    {
+      "name": "admin",
+      "email": "admin@gmail.com",
+      "password": "123456",
+      "id": 28
+    }
+  ],
+  "products": [
+    {
+      "name": "MONTRE GUESS FEMME LILY ACIER",
+      "price": "674",
+      "color": "Argent",
+      "category": "Femme",
+      "description": "L élégance et l'intrigue se rencontrent d  ans cette montre présentant un  - Étanchéité: 30 mètres (3ATM) - Taille du boîtier: Ø36mm - Garanti: 1 an",
+      "image": "https://chakrounwatch.com.tn/uploads/articles/MONTRE%20GUESS%20FEMME%20LILY%20ACIER-8503-0-1-1674903273.jpg",
+      "id": 2
+    },
+    {
+      "name": "MONTRE GC HOMME CHRONO SILICONE",
+      "price": "559",
+      "color": "Noir",
+      "category": "Homme ",
+      "souscategory": "Montre Silicone",
+      "description": "Adoptez l'esprit sportif Gc avec ce chronographe est étonnamment masculine  Simple Fonctionalité: Chronographe Mouvement: Quartz Afficheur: Analogique Étanchéité: 100 mètres (10 ATM) Taille du boîtier: Ø44mm Garanti: 2 ans ",
+      "image": "https://chakrounwatch.com.tn/uploads/articles/MONTRE%20GC%20HOMME%20CHRONO%20SILICONE-7868-0-1-1650878916.jpg",
+      "id": 3
+    },
+    {
+      "name": "Pizza",
+      "price": 16,
+      "color": "red",
+      "category": "salty",
+      "description": "La maison GUESS vous dévoile  Boucle dépliante Mouvement: Quartz Afficheur: Analogique Étanchéité: 30 mètres (3ATM) Taille du boîtier: Ø36mm Garanti: 1 an ",
+      "image": "https://chakrounwatch.com.tn/uploads/articles/MONTRE%20GUESS%20FEMME%20LADIES%20TREND%20ACIER-8481-1-1-1674573513.jpg",
+      "id": 4
+    },
+    {
+      "name": "MONTRE FERRO FEMME ACIER",
+      "price": "160",
+      "color": "Or",
+      "category": "Femme",
+      "description": "Apportez une touche d'élégance à votre look  Mouvement: Quartz Afficheur: Analogique Étanchéité: 30 mètres (3ATM) Garanti: 1 an",
+      "image": "https://chakrounwatch.com.tn/uploads/articles/MONTRE%20ESPRIT%20FEMME%20ACIER-8448-1-1-1673608331.jpg",
+      "id": 8
+    },
+    {
+      "name": "MONTRE FERRO FEMME ACIER",
+      "price": 475,
+      "color": "Or",
+      "category": "Femme",
+      "souscategory": "Montre Acier",
+      "description": "Apportant une touche contemporaine à un  d'une manière distincte, ce qui en fait un appareil qui vaut le détour. Matière du bracelet: Acier Matière du boîtier: Acier Couleur du bracelet: Argent - Doré Couleur du boîtier: Or Couleur du cadran: Blanc Fermoir: Boucle dépliante Fonctionalité: Dateur Mouvement: Quartz Afficheur: Analogique Étanchéité: 50 mètres (5 ATM) Taille du boîtier: Ø32mm Garanti: 2 ans",
+      "image": "https://chakrounwatch.com.tn/uploads/articles/MONTRE%20ESPRIT%20FEMME%20ACIER-8448-1-1-1673608331.jpg",
+      "id": 10
+    },
+    {
+      "name": "MONTRE FERRO FEMME ACIER",
+      "price": 499,
+      "color": "Or",
+      "category": "Femme",
+      "souscategory": "Montre Acier",
+      "description": "Cette montre en acier inoxydable avec un cadran carré et un bracelet  du boîtier: Or Couleur du cadran: Blanc Verre: Minéral Fermoir: Boucle dépliante Mouvement: Quartz Afficheur: Analogique Étanchéité: 30 mètres (3ATM) Taille du boîtier: Ø28mm Garanti: 2 ans",
+      "image": "https://chakrounwatch.com.tn/uploads/articles/MONTRE%20ESPRIT%20FEMME%20ACIER-8438-1-1-1673433835.jpg",
+      "id": 11
+    },
+    {
+      "name": "MONTRE POLOEXCHANGE HOMME ACIER",
+      "price": 499,
+      "color": "Argent",
+      "category": "Homme",
+      "souscategory": "Montre Acier",
+      "description": "La marque poloexchange est la marque plus connue dans la monde  Analogique Étanchéité: 30 mètres (3ATM) Garanti: 1 an",
+      "image": "https://chakrounwatch.com.tn/uploads/articles/MONTRE%20POLOEXCHANGE%20HOMME%20ACIER-8210-1-1-1665583070.jpg",
+      "id": 12
+    },
+    {
+      "name": "MONTRE QNQ HOMME SILICONE",
+      "price": 75,
+      "color": "Noir",
+      "category": "Homme",
+      "souscategory": "Montre Silicone",
+      "description": "Cette montre Q&Q apporte de la tendance et du look au quotidien. Tels que les éclaboussures de pluie et la natation. Matière du bracelet: Silicone Matière du boîtier: Résine Couleur du bracelet: NoirCouleur du boîtier: Noir Couleur du cadran: Rouge Verre: Minéral Fermoir: Simple Mouvement: Quartz Afficheur: Analogique Étanchéité: 100 mètres (10 ATM) Taille du boîtier: Ø44mm Garanti: 1 an",
+      "image": "https://chakrounwatch.com.tn/uploads/articles/MONTRE%20QNQ%20HOMME%20SILICONE-8295-1-1-1667831052.jpg",
+      "id": 13
+    },
+    {
+      "name": "MONTRE QNQ HOMME SILICONE",
+      "price": 89,
+      "color": "Noir",
+      "category": "Enfants",
+      "souscategory": "Montre Silicone",
+      "description": "Cette montre Q&Q apporte de la tendance éclaboussures de pluie et la natation. Matière du bracelet: Silicone Matière du boîtier: Résine Couleur du bracelet:  Taille du boîtier: Ø44mm Garanti: 1 an",
+      "image": "https://chakrounwatch.com.tn/uploads/articles/MONTRE%20QNQ%20ENFANT%20SILICONE-3194-0-1-1645441902.jpg",
+      "id": 14
+    }
+  ],
+  "user": [
+    {
+      "name": "dd",
+      "email": "omaima@gmail.com",
+      "password": "123456",
+      "id": 1
+    },
+    {
+      "name": "rio",
+      "email": "rio@gmail.com",
+      "password": "123456",
+      "id": 2
+    },
+    {
+      "name": "dddd",
+      "email": "dddd@gmail.com",
+      "password": "123456",
+      "id": 3
+    },
+    {
+      "name": "ff",
+      "email": "ff@gmail.com",
+      "password": "123456",
+      "id": 4
+    },
+    {
+      "name": "rio",
+      "email": "rio2@gmail.com",
+      "password": "123456",
+      "id": 5
+    },
+    {
+      "name": "test",
+      "email": "test@gmail.com",
+      "password": "123456",
+      "id": 6
+    },
+    {
+      "name": "test2",
+      "email": "test2@gmail.com",
+      "password": "123456",
+      "id": 7
+    },
+    {
+      "name": "ghjklmù",
+      "email": "houce@gmail.com",
+      "password": "123456",
+      "id": 8
+    },
+    {
+      "name": "",
+      "email": "",
+      "password": "",
+      "id": 9
+    },
+    {
+      "name": "omaima",
+      "email": "omaima95@gmail.com",
+      "password": "123456",
+      "id": 10
+    },
+    {
+      "name": "iit2023",
+      "email": "iit2023@gmail.com",
+      "password": "123",
+      "id": 11
+    },
+    {
+      "name": "do",
+      "email": "do@gmail.com",
+      "password": "123456",
+      "id": 12
+    },
+    {
+      "name": "",
+      "email": "",
+      "password": "",
+      "id": 13
+    }
+  ],
+  "cart": [
+    {
+      "name": "CupCake",
+      "price": "7",
+      "color": "red",
+      "category": "Sweet ",
+      "description": "This cupcake is like a burst of fresh strawberries in every bite! It's made with a light strawberry ",
+      "image": "https://assets.afcdn.com/recipe/20131116/33422_w1024h1024c1cx320cy480.webp",
+      "quantity": 1,
+      "productId": 3,
+      "userId": null,
+      "id": 1
+    },
+    {
+      "name": "CupCake",
+      "price": "7",
+      "color": "red",
+      "category": "Sweet ",
+      "description": "This cupcake is like a burst of fresh strawberries in every bite! It's made with a light strawberry ",
+      "image": "https://assets.afcdn.com/recipe/20131116/33422_w1024h1024c1cx320cy480.webp",
+      "quantity": 1,
+      "userId": 2,
+      "productId": 3,
+      "id": 3
+    },
+    {
+      "name": "MONTRE GC HOMME CHRONO SILICONE",
+      "price": "559",
+      "color": "Noir",
+      "category": "Homme ",
+      "souscategory": "Montre Silicone",
+      "description": "Adoptez l'esprit sportif Gc avec ce chronographe est étonnamment masculine  Simple Fonctionalité: Chronographe Mouvement: Quartz Afficheur: Analogique Étanchéité: 100 mètres (10 ATM) Taille du boîtier: Ø44mm Garanti: 2 ans ",
+      "image": "https://chakrounwatch.com.tn/uploads/articles/MONTRE%20GC%20HOMME%20CHRONO%20SILICONE-7868-0-1-1650878916.jpg",
+      "quantity": 1,
+      "userId": 1,
+      "productId": 3,
+      "id": 4
+    }
+  ],
+  "order": [
+    {
+      "email": "20110375",
+      "totalPrice": 150,
+      "userId": 2,
+      "id": 1
+    }
+  ],
+  "orders": [
+    {
+      "email": "",
+      "address": "",
+      "contact": "",
+      "totalPrice": 10,
+      "userId": {
+        "name": "rio",
+        "email": "rio@gmail.com",
+        "password": "123456",
+        "id": 2
+      },
+      "id": 4
+    },
+    {
+      "email": "rio@gmail.com",
+      "address": "fghj",
+      "contact": "sz",
+      "totalPrice": 10,
+      "userId": {
+        "name": "rio",
+        "email": "rio@gmail.com",
+        "password": "123456",
+        "id": 2
+      },
+      "id": 5
+    },
+    {
+      "email": "",
+      "address": "",
+      "contact": "",
+      "totalPrice": 110,
+      "userId": {
+        "name": "rio",
+        "email": "rio@gmail.com",
+        "password": "123456",
+        "id": 2
+      },
+      "id": 6
+    },
+    {
+      "email": "",
+      "address": "",
+      "contact": "",
+      "totalPrice": 110,
+      "userId": {
+        "name": "rio",
+        "email": "rio@gmail.com",
+        "password": "123456",
+        "id": 2
+      },
+      "id": 7
+    },
+    {
+      "email": "",
+      "address": "",
+      "contact": "",
+      "totalPrice": 10,
+      "userId": {
+        "name": "rio",
+        "email": "rio@gmail.com",
+        "password": "123456",
+        "id": 2
+      },
+      "id": 8
+    },
+    {
+      "email": "mlajmi52@yahoo.com",
+      "address": "sfacx",
+      "contact": "WW",
+      "totalPrice": 20,
+      "userId": {
+        "name": "rio",
+        "email": "rio@gmail.com",
+        "password": "123456",
+        "id": 2
+      },
+      "id": 9
+    },
+    {
+      "email": "mlajmi52@yahoo.com",
+      "address": "sfacx",
+      "contact": "WW",
+      "totalPrice": 20,
+      "userId": {
+        "name": "rio",
+        "email": "rio@gmail.com",
+        "password": "123456",
+        "id": 2
+      },
+      "id": 10
+    },
+    {
+      "email": "mlajmi52@yahoo.com",
+      "address": "sfacx",
+      "contact": "WW",
+      "totalPrice": 20,
+      "userId": {
+        "name": "rio",
+        "email": "rio@gmail.com",
+        "password": "123456",
+        "id": 2
+      },
+      "id": 11
+    },
+    {
+      "email": "",
+      "address": "",
+      "contact": "",
+      "totalPrice": 43,
+      "userId": 10,
+      "id": 18
+    },
+    {
+      "email": "",
+      "address": "",
+      "contact": "",
+      "totalPrice": 43,
+      "userId": 10,
+      "id": 19
+    },
+    {
+      "email": "rio@gmail.com",
+      "address": "aqdsfghjk",
+      "contact": "1234658585",
+      "totalPrice": 80,
+      "userId": 2,
+      "id": 21
+    },
+    {
+      "email": "",
+      "address": "",
+      "contact": "",
+      "totalPrice": 64,
+      "userId": 2,
+      "id": 22
+    }
+  ]
+}
