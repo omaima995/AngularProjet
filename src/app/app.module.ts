@@ -33,7 +33,11 @@ import { CartPageComponent } from './cart-page/cart-page.component';
 import { CheckoutComponent } from './checkout/checkout.component';
 import { MyOrdesComponent } from './my-ordes/my-ordes.component';
 import { DeleatProductDialogComponentComponent } from './deleat-product-dialog-component/deleat-product-dialog-component.component';
+import { TopMenuComponent } from './top-menu/top-menu.component';
+import { TestComponent } from './test/test.component';
 import { FooterComponent } from './footer/footer.component';
+import { NavbarComponent } from './navbar/navbar.component';
+
 
 
 
@@ -56,7 +60,12 @@ import { FooterComponent } from './footer/footer.component';
     CheckoutComponent,
     MyOrdesComponent,
     DeleatProductDialogComponentComponent,
+    TopMenuComponent,
+    TestComponent,
     FooterComponent,
+    NavbarComponent,
+ 
+
 
 
   ],

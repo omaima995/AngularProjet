@@ -1,77 +1,75 @@
 <!-- Login Area-->
 
 <!-- Login Area -->
-<div *ngIf="showLogin" class="slogin">
-    <h1 class="mb-3">Seller Login</h1>
-    <p class="errer">{{authErreur}}</p>
-    <form #sellerLogin="ngForm" (ngSubmit)="Login(sellerLogin.value)" class="common-form" >
-      <mat-form-field appearance="fill" class="mb-3">
-        <mat-label>Email</mat-label>
-        <input matInput type="text" ngModel name="email" placeholder="Enter Email" #email="ngModel" required>
-      </mat-form-field>
-      <mat-form-field appearance="fill" class="mb-3">
-        <mat-label>Password</mat-label>
-        <input matInput type="password" ngModel name="password" placeholder="Enter Password" #password="ngModel" required>
-      </mat-form-field>
-      <button type="submit" class="btn btn-outline-success mt-4">login</button>
-      
-      <a class="auth-toggle-link ms-3" (click)="openSignUp()">Don't Have Account? Click To Sign-up</a>
-    </form>   
-  </div>
+<section class="signin-page account">
+  <div class="container">
+    <div class="row">
+      </div>
+      <div *ngIf="!showLogin" class="col-md-6 col-md-offset-3"  style="margin: 0 auto;">
+       <form class="block text-center">
+        <a routerLink="/"><img src="../assets/images/Logopng1.png" alt="Logo" class="img-fluid"></a>
+        <h2 class="text-center">Welcome Back</h2>
+        <p class="errer">{{authErreur}}</p>
+        <form #sellerLogin="ngForm" (ngSubmit)="Login(sellerLogin.value)" class="text-left clearfix" >
+          <div class="form-group">
+            <input  type="email" ngModel name="email" placeholder="Enter Email" class="form-control" #email="ngModel"  required>
+
+          </div>
+          <div class="form-group">
+            <input type="password" ngModel name="password" placeholder="Enter Password"  class="form-control" #password="ngModel" required>
+          </div>
+          <div class="text-center">
+
+          <button type="submit" class="btn btn-main text-center">login</button>
+          </div>
+          <a class="auth-toggle-link ms-3" (click)="openSignUp()">Don't Have Account? Click To Sign-up</a>
+
+
+          
+        </form> 
+
+       </form>
+          
+      </div>
+      </div>
+</section>
   
-  <div class="seller-auth">
-    <div *ngIf="!showLogin" class="signup">
-      <h1 class="mb-3">Seller Sign-up</h1>
-      <form #sellerSignup="ngForm" (ngSubmit)="signup(sellerSignup.value)" class="common-form">
-        <mat-form-field appearance="fill" class="mb-3">
-          <mat-label>Name</mat-label>
-          <input matInput type="text" ngModel name="name" placeholder="Enter Name"  required>
-        </mat-form-field>
-        <mat-form-field appearance="fill" class="mb-3">
-          <mat-label>Email</mat-label>
-          <input matInput type="text" ngModel name="email" placeholder="Enter Email"  required>
-        </mat-form-field>
-        <mat-form-field appearance="fill" class="mb-3">
-          <mat-label>Password</mat-label>
-          <input matInput type="password" ngModel name="password" placeholder="Enter Password" >
-        </mat-form-field>
-        <button type="submit" class="btn btn-outline-success mt-4">Sign Up</button>
-      
-        <a class="auth-toggle-link ms-3" (click)="openLogin()">Already Have Account? Click To Login</a>
-      </form>   
-    </div>
-  </div>
+  
 
   
-<!--
-<div *ngIf="showLogin" class="slogin">
-    <h1> seller Login</h1>
-    <p class="errer">{{authErreur}}</p>
-
-<form #sellerLogin="ngForm" (ngSubmit)="Login( sellerLogin.value)" class="common-form">
-<input  class="from-input"type="text" ngModel name="email" placeholder="Entre Eamil">
-<input class="from-input" type="password"  ngModel name="password"  placeholder="Entre password">
-<button class="form-button">Login</button>
-<a class="auth-toggle-link" (click)="openSignUp()">Don't Have Account  Click To Sign-up </a>
-
-
-</form>   
-
-
-</div>
-
-
-<div class="seller-auth">
-    <div *ngIf="!showLogin" class="signup">
-        <h1> seller sign-up </h1>
-
-<form #sellerSignup="ngForm" (ngSubmit)="signup( sellerSignup.value)" class="common-form">
-    <input class="from-input" type="text" ngModel name="name"  placeholder="Entre Name">
-    <input class="from-input" type="password"  ngModel name="password"  placeholder="Entre password">
-    <input  class="from-input"type="text" ngModel name="email" placeholder="Entre Eamil">
-    <button class="form-button">SignUP </button>
-    <a class="auth-toggle-link"  (click)="openLogin()">Already Have Account  Click To Login </a>
-
-</form>   
- </div>
- -->
+  <section class="signin-page account">
+    <div class="container">
+      <div class="row">
+        </div>
+        <div *ngIf="showLogin" class="col-md-6 col-md-offset-3"  style="margin: 0 auto;">
+         <form class="block text-center">
+          <a routerLink="/"><img src="../assets/images/Logopng1.png" alt="Logo" class="img-fluid"></a>
+          <h2 class="text-center">Sign-up</h2>
+          <p class="errer">{{authErreur}}</p>
+          <form #sellerSignup="ngForm"  (ngSubmit)="signup(sellerSignup.value)" class="text-left clearfix" >
+            <div class="form-group">
+              <input matInput type="text" ngModel name="name" placeholder="Enter your Name" class="form-control" #name="ngModel"  required>
+  
+            </div>
+            <div class="form-group">
+              <input matInput type="email" ngModel name="email" placeholder="Enter Email" class="form-control" #email="ngModel"  required>
+  
+            </div>
+            <div class="form-group">
+              <input type="password" ngModel name="password" placeholder="Enter Password"  class="form-control" #password="ngModel" required>
+            </div>
+            <div class="text-center">
+  
+            <button type="submit" class="btn btn-main text-center">sign-up</button>
+            </div>
+            <a class="auth-toggle-link ms-3" (click)="openLogin()">Don't Have Account? Click To Sign-up</a>
+  
+  
+            
+          </form> 
+  
+         </form>
+            
+        </div>
+        </div>
+  </section>

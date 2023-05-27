@@ -1,0 +1,37 @@
+
+                
+                <div class="top-menu__container">
+                    <ul class="top-menu__items">
+                        <li class="top-menu__content">
+                            <span class="__cf_email__" >
+                                <i class="fa fa-phone-alt icone-fa-menu"></i>
+                                <a href="tel:74000000">+216 74 000 000</a>
+                                                                 
+                            </span>
+                        </li>
+                        <li>
+                            <span class="__cf_email__" >
+                                <i class="fab fa-whatsapp icone-fa-menuu"></i>
+                                <a href="tel:93000000">+216 93 000 000</a>
+
+                            </span>
+                        </li>
+
+                        <li class="login-item">
+                            <a routerLink="seller-auth" class="login_modal_user">
+                                <i class="fa fa-users icone-fa-menu"></i> <span class="label-connexion"> Accès Pro  </span>                    
+                            </a>
+                        </li>
+                        <li class="login-item">
+                            <a routerLink="/user-auth" class="login_modal_user">
+                                <i class="fa fa-user icone-fa-menu"></i> <span class="label-connexion"> Espace Client   </span>                    
+                            </a>
+                        </li>
+                    
+                        <li class="nav-item">
+                            <a [routerLink]="cartItem>0?'cart-page':null" class="nav-link active" aria-current="page"><fa-icon [icon]="['fas', 'shopping-cart']" class="iconestyle"></fa-icon>
+                                Cart({{cartItem}})</a>
+                            
+                        </li>
+                    </ul>
+                </div>

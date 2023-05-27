@@ -1,8 +1,9 @@
  <nav class="navbar navbar-expand-lg bg-body-tertiary">
     <div class="container-fluid">
-        <a routerLink="/"><img src="../assets/images/Logopng.png" alt="Logo" class="img-fluid"></a>
+        <a routerLink="/"><img src="../assets/images/Logopng1.png" alt="Logo" class="img-fluid"></a>
 
         <form *ngIf="menuType!=='seller'" class="d-flex searchinput" role="search">
+            <app-navbar />
             <input type="text" #seachInput (keyup)="searchProduct($event)" (blur)="hideSearch()" placeholder="Search" aria-label="Search" class="form-control me-2 inputsearch">
         <button class="btn btn-outline-success" type="submit" (click)="submitSearch(seachInput.value)">Search</button>
         <ul class="suggested-result" *ngIf="searchResult">

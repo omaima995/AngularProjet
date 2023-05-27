@@ -30,11 +30,11 @@ export class SellerAuthComponent implements OnInit {
 
   }
   openLogin(){
-    this.showLogin=true;
+    this.showLogin=false;
 
   }
   openSignUp(){
-    this.showLogin=false;
+    this.showLogin=true;
 
   }
   Login(data:login):void{

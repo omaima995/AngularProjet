@@ -1,0 +1,136 @@
+footer {
+  background-color: black;
+  color: white;
+  padding: 20px;
+  position: relative;
+  bottom: -208px;
+}
+
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+}
+.description {
+  width: 40%; /* Réduisez la largeur des catégories */
+  margin-bottom: 20px;
+}
+
+.categories,
+.contact {
+  width: 30%; /* Augmentez la largeur de la description et des coordonnées de contact */
+  margin-bottom: 20px;
+}
+
+h3 {
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+li {
+  margin-bottom: 5px;
+}
+
+a {
+  color: white;
+  text-decoration: none;
+}
+
+p {
+  margin-bottom: 5px;
+}
+.fa-color {
+  color: #d9cab3;
+}
+.newsletters-button:hover {
+  background: #caad70;
+  color: #fff;
+}
+.newsletters-input {
+  border-radius: 5px 0px 0px 5px;
+  width: 60%;
+  border: 1px solid #eee;
+  padding: 7.5px;
+  font-size: 14px;
+  background-color: #f9f9f9;
+}
+.newsletters-button {
+  background: #d9cab3;
+  color: #fff;
+  font-size: 14px;
+  padding: 8.5px 17px;
+  border-radius: 0px 5px 5px 0px;
+  border: 0;
+  position: absolute;
+  transition: all 0.3s;
+  text-transform: capitalize;
+  margin-left: -3px;
+}
+.social-icons {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.social-icons li {
+  display: inline-block;
+  margin-right: 10px;
+}
+
+.social-icons a {
+  display: inline-block;
+  width: 40px;
+  height: 40px;
+  line-height: 40px;
+  text-align: center;
+  border-radius: 50%;
+  color: #ffffff;
+  background-color: #333333;
+  transition: background-color 0.3s ease;
+  border: 2px solid transparent;
+}
+
+.social-icons a:hover {
+  background-color: #666666;
+}
+
+.social-icons .facebook {
+  background-color: #3b5998;
+}
+
+.social-icons .instagram {
+  background-color: #e4405f;
+}
+
+.social-icons .twitter {
+  background-color: #1da1f2;
+}
+
+.social-icons .youtube {
+  background-color: #cd201f;
+}
+
+.social-icons i {
+  font-size: 18px;
+}
+
+.social-icons .facebook:hover {
+  border-color: #3b5998;
+}
+
+.social-icons .instagram:hover {
+  border-color: #e4405f;
+}
+
+.social-icons .twitter:hover {
+  border-color: #1da1f2;
+}
+
+.social-icons .youtube:hover {
+  border-color: #cd201f;
+}

@@ -1,0 +1,43 @@
+ul.top-menu__items {
+    display: flex;
+    margin: 0 0 0 400px;
+    justify-content: space-evenly;
+}
+
+.top-menu__container {
+    padding: 7px 0px 7px 0px;
+    background: #212121;
+}
+.icone-fa-menu {
+    width: 25px;
+    height: 25px;
+    line-height: 25px;
+    text-align: center;
+    border-radius: 50%;
+    color: #ffffff;
+    margin-right: 5px;
+    font-size: 14px;
+}
+.icone-fa-menuu {
+    width: 25px;
+    height: 25px;
+    line-height: 25px;
+    text-align: center;
+    border-radius: 50%;
+    color: #ffffff;
+    margin-right: 5px;
+    font-size: 19px;
+}
+label.label-tel {
+    color: #D9CAB3;
+}
+a {
+    
+    text-decoration: none;
+    color: #D9CAB3;
+}
+a:hover {
+    
+    text-decoration: none;
+    color: white;
+}

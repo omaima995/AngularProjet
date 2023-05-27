@@ -104,5 +104,50 @@ border: 1px solid #ddd;
   .nav-item a:hover {
     color: #FE5C36;
   }
+  .icone-fa-menu {
+    width: 25px;
+    height: 25px;
+    line-height: 25px;
+    text-align: center;
+    border-radius: 50%;
+    background: #fff none repeat scroll 0 0;
+    color: #22b24c;
+    margin-right: 5px;
+    font-size: 14px;
+}
+.label-tel {
+    color: #fff;
+    font-size: 15px;
+    font-weight: 500;
+    display: inline-block;
+}
+.bravo_wrap .bravo_topbar {
+    background: linear-gradient(to right, #333333, #22b24c);
+    padding: 7px 0px;
+    /* margin-top: 8px; */
+    border-bottom: 1px solid #fff;
+}
+.bravo_wrap .bravo_topbar .content .topbar-items li {
+    padding-left: 10px;
+    padding-right: 10px;
+    display: inline-block;
+}
 
+.account .block {
+    background-color: #fff;
+    border: 1px solid #dedede;
+    padding: 30px;
+    margin: 100px 0;
+}
+.btn-main, .btn-small, .btn-transparent, .btn-solid-border {
+    background: #000;
+    color: #fff;
+    display: inline-block;
+    font-size: 11px;
+    letter-spacing: 1px;
+    padding: 14px 35px;
+    text-transform: uppercase;
+    font-weight: 200;
+    border-radius: 0;
+}
 

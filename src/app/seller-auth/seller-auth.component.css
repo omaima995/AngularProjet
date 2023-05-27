@@ -19,3 +19,65 @@
     text-align: center;
     color: rgba(18, 120, 18, 0.818);
 }
+.account .block {
+    background-color: #111010;
+    border: 1px solid #dedede;
+    padding: 30px;
+    margin: 100px 0;
+    border-radius: 12px;
+    box-shadow: red;
+    box-shadow: 0px 0px 2px 2px rgb(0 0 0 / 60%);
+}
+.account .block h2 {
+    font-weight: 400;
+    font-size: 25px;
+    text-transform: uppercase;
+    margin-top: 12px;
+    color: #d9cab3;
+}
+.btn-main, .btn-small, .btn-transparent, .btn-solid-border {
+    background: #d9cab3;
+    color: #111010;
+    display: inline-block;
+    font-size: 11px;
+    letter-spacing: 1px;
+    padding: 14px 35px;
+    text-transform: uppercase;
+    font-weight: 200;
+    border-radius: 0;
+    font-weight: bolder;
+
+}
+
+p {
+    font-family: "Poppins", sans-serif;
+    color: #d4d3d7;
+    font-size: 15px;
+}
+.account .block a {
+    color: #fff;
+}
+.account .block form input[type=email], .account .block form input[type=password], .account .block form input[type=text] {
+    border-radius: 5px;
+    box-shadow: none;
+}
+.account .block form {
+    margin-top: 40px;
+}
+input.form-control {
+    margin-bottom: 13px;
+}
+.img-fluid {
+    max-width: 35%;
+    height: auto;
+}
+button.btn.btn-main.text-center {
+    margin-bottom: 20px;
+    margin-top: 20px;
+    border-radius: 5px;
+
+
+}
+a{
+    text-decoration: none;
+}
