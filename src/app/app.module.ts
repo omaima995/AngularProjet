@@ -37,6 +37,7 @@ import { TopMenuComponent } from './top-menu/top-menu.component';
 import { TestComponent } from './test/test.component';
 import { FooterComponent } from './footer/footer.component';
 import { NavbarComponent } from './navbar/navbar.component';
+import { SliderComponent } from './slider/slider.component';
 
 
 
@@ -64,6 +65,7 @@ import { NavbarComponent } from './navbar/navbar.component';
     TestComponent,
     FooterComponent,
     NavbarComponent,
+    SliderComponent,
  
 
 

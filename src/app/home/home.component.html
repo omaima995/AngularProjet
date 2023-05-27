@@ -20,6 +20,9 @@
 		<div class="picsum-img-wrapper">
 			<a routerLink="/"><img src="../assets/images/Baniere.png" alt="Logo" class="img-fluid"></a>
 		</div>
+
+
+
 		
 	</div>
 
@@ -51,7 +54,7 @@
 					<div class="product-item">
 						<div class="product-thumb">
 							<span class="bage">Sale</span>
-							<img class="img-responsive" src="{{item.image}}" alt="product-img" />
+							<a routerLink="/details/{{item.id}}"><img class="img-responsive" src="{{item.image}}" alt="product-img" /></a>
 							<div class="preview-meta">
 								<ul>
 									<li>
@@ -69,15 +72,20 @@
 							  </div>
 						</div>
 						<div class="product-content">
-							<h4><a  routerLink="/details/{{item.id}}">{{item.name}}</a></h4>
-							<p class="price">{{ item.price }}TND</p>
-							<p class="description">{{item.description}}</p>
+							<h4><a  routerLink="/details/{{item.id}}" class="text-left">{{item.name}}</a></h4>
 							
 						</div>
+
+						<div class="product-footer px-3 mb-2 d-flex justify-content-between align-items-center">
+							<span >A partir de <label class="label-prix">{{ item.price }}<sup>TND</sup></label></span>
+							<button class="btn btn-outline-success"><a  routerLink="/details/{{item.id}}">View Details</a></button>
+							
+							
+							
+						</div>
+						
 					</div>
-					<div class="booking-middle">
-						<a href="#"><button class="btn btn-profiter">Découvrez </button></a>
-					</div>
+					
 				</div>
 				 
 		</div>

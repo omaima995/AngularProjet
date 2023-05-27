@@ -1,11 +1,15 @@
- <nav class="navbar navbar-expand-lg bg-body-tertiary">
+<nav class="navbar navbar-expand-lg bg-body-tertiary">
     <div class="container-fluid">
         <a routerLink="/"><img src="../assets/images/Logopng1.png" alt="Logo" class="img-fluid"></a>
+        
 
         <form *ngIf="menuType!=='seller'" class="d-flex searchinput" role="search">
             <app-navbar />
+           
             <input type="text" #seachInput (keyup)="searchProduct($event)" (blur)="hideSearch()" placeholder="Search" aria-label="Search" class="form-control me-2 inputsearch">
-        <button class="btn btn-outline-success" type="submit" (click)="submitSearch(seachInput.value)">Search</button>
+        <button class="btn search" type="submit" (click)="submitSearch(seachInput.value)"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-search" viewBox="0 0 16 16">
+            <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z"/>
+          </svg></button>
         <ul class="suggested-result" *ngIf="searchResult">
           <li *ngFor="let item of searchResult">
             <a (mousedown)="redirectToDetails(item.id)">{{item.name}}</a>
@@ -15,28 +19,8 @@
 
        <div [ngSwitch]="menuType" class="collapse navbar-collapse menu" id="navbarScroll">
         <ul *ngSwitchCase="'default'" class="navbar-nav me-auto my-2 my-lg-0 navbar-nav-scroll " style="--bs-scroll-height: 100px;">
-            <li class="nav-item">
-                <a routerLink="" class="nav-link active" aria-current="page"><fa-icon [icon]="['fas', 'home']" class="iconestyle"></fa-icon>
-                    home</a>
-                
-            </li>
-            <li class="nav-item">
-                <a routerLink="/user-auth" class="nav-link active" aria-current="page" ><fa-icon [icon]="['fas', 'user']" class="iconestyle"></fa-icon>custumer</a>
-
-                
-                
-            </li>
-            <li class="nav-item">
-                <a routerLink="seller-auth" class="nav-link active" aria-current="page"><fa-icon [icon]="adminIcon" class="iconestyle"></fa-icon>
-
-                    Acces Pro</a>
-                
-            </li>
-            <li class="nav-item">
-                <a [routerLink]="cartItem>0?'cart-page':null" class="nav-link active" aria-current="page"><fa-icon [icon]="['fas', 'shopping-cart']" class="iconestyle"></fa-icon>
-                    Cart({{cartItem}})</a>
-                
-            </li>
+           
+          
            
            
             
