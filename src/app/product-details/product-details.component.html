@@ -1,62 +1,74 @@
-
-
-<div class="container"> 
-    <div class ="row"  *ngIf="productData">
-        <div class="col-sm-3 product-colms" > 
-            <div class="item">
-                <img class="productimage" src="{{productData.image}}" alt="">
-                <div class="body">
-                    <h1 class="titel-product">{{productData.name}}</h1>
-                 
-                
-            
-                </div>
-            </div>
-            
-
+<div class="container">
+  <div class="row" *ngIf="productData">
+    <div class="col-sm-3 product-colms">
+      <div class="item" style="color:black">
+        <img class="productimage" src="{{ productData.image }}" alt="" />
+        <div class="body">
+          <h1 class="titel-product">{{ productData.name }}</h1>
         </div>
-
-
-        
-        <div class="col-sm-6">
-            <div class="item-description">
-            <div class="details">
-                
-                <h3 class="price-product">
-                    Price: {{productData.price}}TND</h3>
-    
-            </div>
-            <div class="details">
-               
-                <h3 [style.backgroundColor]="productData.color" class="product-color">  </h3>
-    
-            </div>
-            <h6 class="category-product">Category: {{productData.category}}</h6>
-            <h3><span class="title-description">Descriptin:</span><br><span class="description-product">
-                {{productData.description}}
-            </span>
-               </h3>
-               <div class="quantity"> 
-                <button class=" btn btn-dark btn-mois" (click)="handelQuantity('min')">-</button>
-                <input class=" form-control input-form" type="text" value="{{productQuantity}}">
-                <button class=" btn btn-dark btn-plus" (click)="handelQuantity('plus')">+</button>
-                </div>
-            <div class="button-rem-add-back">
-            <button class="btn btn-outline-danger"><a routerLink="">Back to menu</a></button>
-            <button *ngIf="!removecart" class="btn btn-outline-success removebtn" (click)="addtoCart()">Add to cart</button>
-            <button *ngIf="removecart" class="btn btn-outline-danger removebtn" (click)="removetoCart(productData.id)">remove to cart</button>
-            </div>
-            
-        </div>
-    
-        
-    
+      </div>
     </div>
 
+    <div class="col-sm-6">
+      <div class="item-description">
+        <div class="details">
+          <h3 class="price-product">Price: {{ productData.price }}TND</h3>
+        </div>
+        <div class="details">
+          <h3
+            [style.backgroundColor]="productData.color"
+            class="product-color"
+          ></h3>
+        </div>
+        <h6 class="category-product">Category: {{ productData.category }}</h6>
+        <h3>
+          <span class="title-description">Descriptin:</span><br /><span
+            class="description-product"
+          >
+            {{ productData.description }}
+          </span>
+        </h3>
+        <div class="quantity">
+          <button class="btn btn-dark btn-mois" (click)="handelQuantity('min')">
+            -
+          </button>
+          <input
+            class="form-control input-form"
+            type="text"
+            value="{{ productQuantity }}"
+          />
+          <button
+            class="btn btn-dark btn-plus"
+            (click)="handelQuantity('plus')"
+          >
+            +
+          </button>
+        </div>
+        <div class="button-rem-add-back">
+          <button class="btn" style="background-color: black">
+            <a routerLink="" style="color: white">Back to menu</a>
+          </button>
+          <button
+            *ngIf="!removecart"
+            class="btn btn-outline-success removebtn"
+            style="
+              background-color: white;
+              color: black;
+              border: 1px solid black;
+            "
+            (click)="addtoCart()"
+          >
+            Add to cart
+          </button>
+          <button
+            *ngIf="removecart"
+            class="btn btn-outline-danger removebtn"
+            (click)="removetoCart(productData.id)"
+          >
+            remove to cart
+          </button>
+        </div>
+      </div>
     </div>
-
+  </div>
 </div>
-
-
-
-

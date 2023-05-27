@@ -1,181 +1,232 @@
-.productimage{
-    width: 100%;
-    height: 400px;
-    object-fit: contain;
-} 
-.product-color{
-    border: 1px solid #000;
-    width: 40px;
-    height: 40px;
-    border-radius: 50%;
-    margin-left: 16px;
+/* Modifier le style de l'image du produit */
+.productimage {
+  width: 100%;
+  height: auto; /* Modifier la hauteur pour qu'elle soit automatique */
+  object-fit: cover; /* Utiliser "cover" pour remplir l'espace sans déformation */
+  border-radius: 10px; /* Ajouter une bordure arrondie */
 }
-.product-details{
-    margin-top: 50px;
-    margin-bottom: 80px;
+
+/* Modifier le style de la couleur du produit */
+.product-color {
+  border: 1px solid #000;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  margin-left: 16px;
+  cursor: pointer; /* Ajouter un curseur au survol */
 }
-h1,h5,h6{
-    margin-bottom: 10px;
+
+/* Modifier le style des détails du produit */
+.product-details {
+  margin-top: 50px;
+  margin-bottom: 80px;
+  text-align: center; /* Centrer les détails du produit */
 }
-.quantity-group{
-   margin-top:20px ; 
+
+/* Modifier le style des titres */
+h1, h5, h6 {
+  margin-bottom: 10px;
+  font-family: Arial, sans-serif; /* Changer la police */
 }
-.quantity-group-button{
-padding: 10px;
- }
- .quantity-group-input{
-    width:50px ; 
-    padding: 10px;
- }
 
- 
- .item {
-    width: 100%;
-    text-decoration: none;
-    color: #333;
-    margin: 15px;
-    display: inline-block;
-    border-radius: 10px;
-    box-shadow: 0px 2px 5px rgba(202, 37, 16,3);
-    transition: all 0.3s ease-in-out;
-  }
-  
-  .item img {
-    width: 100%;
-    height: 100%;
-    border-radius: 10px;
-  }
-  
-  body {
-    padding-top: 0px;
-    
-  }
-  .titel-product{
-    font-family: Narkisim;
-    text-align: center;
-    margin-top: 10px;
+/* Modifier le style du groupe de quantité */
+.quantity-group {
+  margin-top: 20px;
+  display: flex;
+  align-items: center; /* Centrer verticalement les éléments */
+}
 
-  }
-  
-  .item p {
-    margin: 15px 0;
-    height: 100px;
-    overflow: hidden;
-    font-size: 16px;
-    padding: 5px 15px;
-  }
-  
-  .item h4 {
-    height: 75px;
-    overflow: hidden;
-    padding: 5px 15px;
-    font-size: 18px;
-    background-color: #eee;
-    font-weight: 600;
-    margin-top: 10px;
-  }
-  
-  .item:hover {
-    transform: scale(1.1);
-  }
-  
-  .item span {
-    background-color: #f1b4b4;
-    padding: 3px 7px;
-    border-radius: 30px;
-  }
-  .btn a {
-    text-decoration: none;
-  }
- 
-  a:hover{
-    color: white;
-  }
-  a{
-    color: #198754;
-  }
+.quantity-group-button {
+  padding: 10px;
+  font-size: 16px; /* Changer la taille de la police */
+  background-color: #d9cab3; /* Modifier la couleur du fond */
+  color: #fff; /* Modifier la couleur du texte */
+  border: none;
+  cursor: pointer;
+}
 
-  .item-description {
-    width: 100%;
-    text-decoration: none;
-    color: #333;
-    margin: 15px;
-    display: inline-block;
-    border-radius: 10px;
-    box-shadow: 0px 2px 5px rgba(202, 37, 16,3);
-    transition: all 0.3s ease-in-out;
-    max-height: 366px;
-  }
-  .product-colms{
-    margin-left: 136px;
+.quantity-group-input {
+  width: 50px;
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid #ced4da;
+  border-radius: 5px;
+  margin: 0 10px; /* Ajuster la marge */
+}
 
-  }
-  .col-sm-6 {
-    height: 150px; /* set the height to 400 pixels */
-  }
+/* Modifier le style de l'élément */
+.item {
+  width: 100%;
+  text-decoration: none;
+  color: #333;
+  margin: 15px;
+  display: inline-block;
+  border-radius: 10px;
+  transition: all 0.3s ease-in-out;
+}
 
-  .price-product{
+.item img {
+  width: 100%;
+  height: 100%;
+  border-radius: 10px;
+}
+
+/* Modifier le style du corps */
+body {
+  padding-top: 20px; /* Ajouter un espacement en haut */
+}
+
+/* Modifier le style du titre du produit */
+.titel-product {
+  font-family: Arial, sans-serif;
+  text-align: center;
+  margin-top: 10px;
+  font-size: 24px; 
+  color: #000; 
+}
+
+/* Modifier le style du paragraphe */
+.item p {
+  margin: 15px 0;
+  height: 100px;
+  overflow: hidden;
+  font-size: 16px;
+  padding: 5px 15px;
+}
+
+/* Modifier le style du titre secondaire */
+.item h4 {
+  height: 75px;
+  overflow: hidden;
+  padding: 5px 15px;
+  font-size: 18px;
+  background-color: #eee;
+  font-weight: 600;
+  margin-top: 10px;
+}
+
+/* Modifier l'effet au survol */
+.item:hover {
+  transform: scale(1.1);
+}
+
+/* Modifier le style du span */
+.item span {
+  background-color: #f1b4b4;
+  padding: 3px 7px;
+  border-radius: 30px;
+}
+
+/* Modifier le style du lien */
+.btn a {
+  text-decoration: none;
+}
+
+/* Modifier le style du lien au survol */
+a:hover {
+  color: white;
+}
+
+/* Modifier le style de la description de l'élément */
+.item-description {
+  width: 100%;
+  text-decoration: none;
+  color: #333;
+  margin: 15px;
+  display: inline-block;
+  border-radius: 10px;
+  transition: all 0.3s ease-in-out;
+  max-height: 366px;
+}
+
+/* Modifier le style des colonnes */
+.product-colms {
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 500px; 
+}
+
+.col-sm-6 {
+  height: auto; /* Changer la hauteur en automatique */
+}
+
+/* Modifier le style du prix du produit */
+.price-product {
   margin-left: 15px;
-  font-family: Narkisim;
+  font-family: Arial, sans-serif;
   margin-top: 26px;
+  font-size: 20px;
+  color: #000;
 }
-.category-product{
-    margin-left: 15px;
-font-family: Narkisim;
-margin-top: 10px;
 
+/* Modifier le style de la catégorie du produit */
+.category-product {
+  margin-left: 15px;
+  font-family: Arial, sans-serif;
+  margin-top: 10px;
+  font-size: 16px;
 }
-.description-product{
-    margin-left: 15px;
-    font-family: Narkisim;
-    margin-top: 10px;
-    font-size: 20px;
 
+/* Modifier le style de la description du produit */
+.description-product {
+  margin-left: 15px;
+  font-family: Arial, sans-serif;
+  margin-top: 10px;
+  font-size: 18px;
 }
-.title-description{
-    margin-left: 15px;
-    font-family: Narkisim;
-    margin-top: 26px;
 
-
+/* Modifier le style du titre de la description */
+.title-description {
+  margin-left: 15px;
+  font-family: Arial, sans-serif;
+  margin-top: 26px;
+  font-size: 20px;
 }
+
+/* Modifier le style de la quantité */
 .quantity {
-    display: flex;
-    justify-content: flex-start;}
-    .quantity .input {
-        margin: 0 20px;
-    }
-    .form-control {
-        display: block;
-        width: 13%;
-        padding: 0.375rem 0.75rem;
-        font-size: 1rem;
-        font-weight: 400;
-        line-height: 1.5;
-        color: #212529;
-        background-color: #fff;
-        background-clip: padding-box;
-        border: 1px solid #ced4da;
-        -webkit-appearance: none;
-        appearance: none;
-        border-radius: 0.375rem;
-        transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out;
-        
-    }
-    .button-rem-add-back{
-        margin-left: 367px;
-        padding-bottom: 18px;
-        margin-top: 13px;
+  display: flex;
+  align-items: center;
+  margin-top: 15px; /* Ajouter une marge supérieure */
+}
 
-    }
-    .btn-mois{
-        margin-left: 18px;
+.quantity .input {
+  margin: 0 20px;
+}
 
-    }
-    .removebtn{
-        margin-left: 10px;
-    }
-    a{
-      color: red;
-    }
-    
+.form-control {
+  display: block;
+  width: 60px; /* Ajuster la largeur */
+  padding: 0.375rem 0.75rem;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.5;
+  color: #212529;
+  background-color: #fff;
+  background-clip: padding-box;
+  border: 1px solid #ced4da;
+  -webkit-appearance: none;
+  appearance: none;
+  border-radius: 0.375rem;
+  transition: border-color 0.15s ease-in-out,  0.15s ease-in-out;
+}
+
+/* Modifier le style des boutons Ajouter/Retirer */
+.button-rem-add-back {
+  margin-left: auto;
+  margin-right: auto;
+  padding-bottom: 18px;
+  margin-top: 13px;
+  display: flex;
+  justify-content: center; /* Centrer horizontalement les boutons */
+}
+
+.btn-mois {
+  margin-left: 18px;
+}
+
+.removebtn {
+  margin-left: 10px;
+}
+
+
