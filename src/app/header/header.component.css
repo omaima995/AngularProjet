@@ -213,28 +213,38 @@ a.nav-link.active {
     position: relative;
   }
   .commonSelect:before {
-    content: "v";
+    content: "\25E3";
     font-family: "themefisher-font";
     position: absolute;
     right: -4px;
     top: 4px;
     font-size: 10px;
     font-weight: bold;
+    transform: rotate(-45deg);
   }
   .commonSelect select {
     -webkit-appearance: none;
     -moz-appearance: none;
     cursor: pointer;
     border: none;
+    font-weight: bold;
     padding: 0;
     height: auto;
-    color: #555;
+    color: black;
   }
   .commonSelect select:focus {
     box-shadow: none;
     border: none;
   }
-
+  .commonSelect:hover select {
+    color: #FE5C36;
+  }
+  .commonSelect:hover {
+    color: #FE5C36;
+  }
+  .commonSelect:hover select option {
+    color: black;
+  }
   ::marker {
     /* display: none; */
     color: white;
@@ -243,4 +253,5 @@ a.nav-link.active {
 select.form-control {
     margin-top: -25px;
 }
+
   

@@ -289,8 +289,8 @@ object-fit: contain;
 
 
 .label-prix {
-  font-size: 22px;
-  color: #21209C;
+  font-size: 19px;
+  color: black;
   font-weight: bold;
 }
 
@@ -390,3 +390,9 @@ p {
   padding: 0px 0 30px !important;
 }
     
+.price-sup{
+  background-color: #f44336;
+  padding: 0 4px;
+  color: white;
+  font-size: 10px;
+}

@@ -289,11 +289,7 @@ object-fit: contain;
 }
 
 
-.label-prix {
-  font-size: 22px;
-  color: #21209C;
-  font-weight: bold;
-}
+
 
 .nowrap {
   white-space: nowrap;
@@ -2325,6 +2321,12 @@ object-fit: contain;
    position: relative;
    margin-bottom: 8px;
  }
+ .label-prix {
+  font-size: 19px;
+  color: black;
+  font-weight: bold;
+}
+
  .checkout-form .form-group label {
    position: absolute;
    top: 18px;
@@ -2662,4 +2664,9 @@ object-fit: contain;
    color: #555;
  }
  /*# sourceMappingURL=style.css.map */
- 
+ .price-sup{
+  background-color: #f44336;
+  padding: 0 4px;
+  color: white;
+  font-size: 10px;
+}
