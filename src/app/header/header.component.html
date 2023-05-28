@@ -27,57 +27,67 @@
             
         </ul>
         <ul *ngSwitchCase="'user'" class="navbar-nav me-auto my-2 my-lg-0 navbar-nav-scroll " style="--bs-scroll-height: 100px;">
-            
-        
-            
-            <li class="nav-item iconestyle">
-                <a routerLink="my-order" class="nav-link active" aria-current="page" ><fa-icon [icon]="receiptIcon"></fa-icon>
-                    My Order</a>
-                
-            </li>
-    
-            
-            <li class="nav-item ">
-                <a routerLink="cart-page" class="nav-link active" aria-current="page"><fa-icon [icon]="['fas', 'shopping-cart']"></fa-icon>Cart({{cartItem}})</a>
-                
-            </li>
-            
-            <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                    <fa-icon [icon]="['fas', 'user']" class="iconestyle"></fa-icon> {{userName | titlecase}}
+            <li class="nav-item header">
+                <a routerLink="cart-page" class="nav-link active" aria-current="page">
+                    <div class="cart-icon">
+                         <fa-icon [icon]="['fas', 'shopping-cart']"></fa-icon>
+                        <span class="notification-badge" *ngIf="cartItem > 0">{{ cartItem }}</span>
+                    </div>
                 </a>
-                <ul class="dropdown-menu">
-                    <a (click)="userlogout()" class="nav-link active" aria-current="page" >Logout</a>
+            </li>
+            <li class="dropdown dropdown-slide nav-item header">
+                    <a href="#!" class="dropdown-toggle" data-toggle="dropdown" data-hover="dropdown" data-delay="350"
+                        role="button" aria-haspopup="true" aria-expanded="false">  <fa-icon [icon]="['fas', 'user']" class="iconestyle"></fa-icon> <span
+                            class="tf-ion-ios-arrow-down"></span></a>
+                    <div class="dropdown-menu text-center">
+                        <ul >
+                            <li class="dropdown-header text-center">{{userName | titlecase}}</li>
 
-                  
-                </ul>
-              </li>
-           
+                            <li class="nav-item iconestyle ">
+                             <a routerLink="my-order" class="nav-link active" aria-current="page" ><fa-icon [icon]="receiptIcon"></fa-icon>
+                                 My Order</a>
+                            </li>
+                            <li > <button (click)="userlogout()" class="btn btn-main " aria-current="page" >Logout</button></li>
+
+                           
+                         </ul>
+                   </div><!-- / .dropdown-menu -->    
+            </li>
         </ul>
         <ul *ngSwitchCase="'seller'" class="navbar-nav me-auto my-2 my-lg-0 navbar-nav-scroll " style="--bs-scroll-height: 100px;">
-            <li class="nav-item">
-                <a routerLink="seller-add-product" class="nav-link active" aria-current="page"> 
-                    <fa-icon [icon]="addicon"></fa-icon>Add Product</a>
-                
-            </li>
-
-            <li class="nav-item">
-                <a routerLink="/seller-home" class="nav-link active" aria-current="page"> <fa-icon [icon]="receiptIcon"></fa-icon>product List</a>
-                
-            </li>
-
-
-            <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                    <fa-icon [icon]="['fas', 'user']" class="iconestyle"></fa-icon>{{sellerName }}
+            
+            <li class="dropdown dropdown-slide nav-item header">
+                <a href="#!" class="dropdown-toggle" data-toggle="dropdown" data-hover="dropdown" data-delay="350"
+                    role="button" aria-haspopup="true" aria-expanded="false">
+                    <fa-icon [icon]="['fas', 'user']" class="iconestyle"></fa-icon>
+                    <span class="tf-ion-ios-arrow-down"></span>
                 </a>
-                <ul class="dropdown-menu">
-                    <a (click)=" logout()" class="nav-link active" aria-current="page">Logout</a>
-
-                  
-                </ul>
-              </li>
-           
+                <div class="dropdown-menu text-center">
+                    <ul>
+                        <li class="dropdown-header text-center">{{ sellerName }}</li>
+            
+                        <li class="nav-item">
+                            <a routerLink="seller-add-product" class="nav-link active" aria-current="page">
+                                <fa-icon [icon]="addicon"></fa-icon>
+                                Add Product
+                            </a>
+                        </li>
+            
+                        <li class="nav-item">
+                            <a routerLink="/seller-home" class="nav-link active" aria-current="page">
+                                <fa-icon [icon]="receiptIcon"></fa-icon>
+                                Product List
+                            </a>
+                        </li>
+            
+                        <li>
+                            <button (click)="logout()" class="btn btn-main" aria-current="page">Logout</button>
+                        </li>
+                    </ul>
+                </div><!-- / .dropdown-menu -->    
+            </li>
+            
+            
         </ul>
        </div>
 

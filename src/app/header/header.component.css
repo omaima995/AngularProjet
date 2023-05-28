@@ -58,6 +58,9 @@
 .suggested-result{
 
 }
+a.nav-link.active {
+    padding: 0;
+}
 .suggested-result li{
    border: 1px  solid #fff;
     padding: 5px;
@@ -102,10 +105,13 @@ border: 1px solid #ddd;
   .suggested-result li:hover {
     background-color: #e6e6e6; 
   }
-
+  .nav-item.header{
+    padding: 20px;
+  }
   .nav-item a:hover {
     color: #FE5C36;
   }
+  
   .icone-fa-menu {
     width: 25px;
     height: 25px;
@@ -176,5 +182,27 @@ border: 1px solid #ddd;
     border-radius: 20px;
     color: #22b24c;
 }
+.dropdown-menu li {
+    margin: 10px;
+} 
 
 
+.cart-icon {
+    position: relative;
+    display: inline-block;
+}
+
+.notification-badge {
+    position: absolute;
+    top: -10px;
+    right: -10px;
+    background-color: red;
+    color: white;
+    font-size: 12px;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
