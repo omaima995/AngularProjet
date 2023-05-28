@@ -2648,3 +2648,14 @@ ul.tt-options-swatch li img {
   z-index: 1000;
 }
 
+button.btn {
+  padding: 10px;
+  font-size: 13px;
+
+}
+.button-cart{
+  margin-top: 25px;
+
+}
+
+

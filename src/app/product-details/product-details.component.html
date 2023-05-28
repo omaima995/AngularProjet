@@ -148,21 +148,27 @@
         <div>
           
         </div>
-        <div class="quantity d-inline-flex">
-          <button class="btn btn-dark btn-mois" (click)="handelQuantity('min')">-</button>
-          <input class="form-control input-form" type="text" value="{{ productQuantity }}" />
-          <button class="btn btn-dark btn-plus" (click)="handelQuantity('plus')">+</button>
+        <div class="d-flex">
+          <div class="quantity d-inline-flex">
+            <button class="btn btn-dark btn-mois" (click)="handelQuantity('min')">-</button>
+            <input class="form-control input-form" type="text" value="{{ productQuantity }}" />
+            <button class="btn btn-dark btn-plus" (click)="handelQuantity('plus')">+</button>
+          </div>
+          <div class="button-cart">
+            <div class="button-rem-add-back d-inline-flex">
+              <button class="btn" style="background-color: black">
+                <a routerLink="" style="color: white">Back to menu</a>
+              </button>
+              <button *ngIf="!removecart" class="btn btn-outline-success removebtn"
+                style="background-color: white; color: black; border: 1px solid black;" (click)="addtoCart()">Add to cart</button>
+              <button *ngIf="removecart" class="btn btn-outline-danger removebtn" (click)="removetoCart(productData.id)">
+                remove to cart
+              </button>
+            </div>
+          </div>
+          
         </div>
-        <div class="button-rem-add-back d-inline-flex" >
-          <button class="btn" style="background-color: black" >
-            <a routerLink="" style="color: white" >Back to menu</a>
-          </button>
-          <button *ngIf="!removecart" class="btn btn-outline-success removebtn" 
-            style="background-color: white; color: black; border: 1px solid black;" (click)="addtoCart()">Add to cart</button>
-          <button *ngIf="removecart"  class="btn btn-outline-danger removebtn" (click)="removetoCart(productData.id)">
-            remove to cart
-          </button >
-        </div>
+        
         <img src="../assets/images/payment.png" class="image-apyement" alt="Logo" >
 
 
