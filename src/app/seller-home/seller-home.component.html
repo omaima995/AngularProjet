@@ -1,81 +1,43 @@
-
-
 <div class="product-list">
+  <h1 class="title text-center">All Product List</h1>
+  <p class="message">{{ productMessage }}</p>
+  <div class="dashboard-wrapper user-dashboard">
+    <div class="table-responsive">
+      <table class="table">
+        <thead>
+          <tr >
+          <th>Image</th>
+          <th>Name</th>
+          <th>Price</th>
+          <th>Color</th>
+          <th>Category</th>
+          <th>Description</th>
+          <th>Action</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr *ngFor="let item of productList">
+            <td><img [src]="item.image" alt="Product Image" /></td>
+            <td>{{ item.name }}</td>
+            <td>{{ item.price }} TND</td>
+            <td>{{ item.color }}</td>
+            <td>{{ item.category }}</td>
+            <td>{{ item.description }}</td>
+            <td>
+              <div class="btn-group" role="group">
+                <button type="button" class="btn btn-default" >
+                  <fa-icon (click)="deleteProduct(item.id)" [icon]="icon" class="fa-icon" style="color: #f76a5f"></fa-icon>
+                </button>
+                <a class="adjust-updat-link btn btn-default" routerLink="/seller-update-product/{{ item.id }}">
+                  <fa-icon [icon]="editicon" class="fa-icon"   style="color: #ffca2c"></fa-icon>
+                </a>
+              </div>
+            </td>
+          </tr>
 
-    <h1 class="title-checkout" > All product List</h1>
-    <p class="message">{{productMessage }}</p>
-    <div class="box mt-5 cartBox">
-        <table class="table table-striped">
-            <thead>
-                <tr class="text-center">
-                    <th colspan="1">Image</th>
-                    <th colspan="1">Name</th>
-                    <th colspan="1">Price</th>
-                    <th colspan="1">Color</th>
-                    <th colspan="1">Category</th>
-                    <th colspan="2">Description</th>
-                    <th colspan="2">Action</th>
-    
-    
-    
-    
-                </tr>
-    
-            </thead>
-            <tbody>
-                <tr *ngFor="let item of productList">
-                    <td><img src ="{{item.image}}"/>
-                        
-    
-                    </td>
-                    <td colspan="1">
-                        {{item.name}}
-    
-                    </td>
-                    <td colspan="1">
-                        {{item.price}}TND
-    
-                    </td>
-                    <td colspan="1">
-                        {{item.color}}
-    
-                    </td>
-                    <td colspan="1">
-                        {{item.category}}
-    
-                    </td>
-                    <td colspan="2">
-                        {{item.description}}
-    
-                    </td>
-                    <td colspan="2">
-                        <fa-icon (click)="deleteProduct(item.id)"  [icon]="icon" style="color: #f76a5f"></fa-icon>
-                        <a  class="adjust-updat-link btn btn-warning" routerLink="/seller-update-product/{{item.id}}"><fa-icon [icon]="editicon"></fa-icon>
-                        </a>
-    
-                    </td>
-                </tr>
-            </tbody>
-        </table>
-
-    </div>
-
-    
-</div>
-
-<div class="modal fade " id="viewCart" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-    <div class="modal-dialog modal-dialog-centered" style="max-width: 900px!important">
-      <div class="modal-content">
-        <div class="modal-header">
-          <h5 class="modal-title" id="exampleModalLabel">Add Product</h5>
-          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-            <span aria-hidden="true">&times;</span>
-          </button>
-        </div>
-        <div class="modal-body">
-    
-           
-        </div>
-      </div>
+        </tbody>
+      </table>
     </div>
   </div>
+</div>
+
