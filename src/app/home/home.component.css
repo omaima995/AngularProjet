@@ -113,11 +113,10 @@ object-fit: contain;
     text-decoration: none;
   }
  
-  a:hover{
-    color: rgb(2, 2, 2);
-  }
+  
   a{
-    color: #21209C;
+    color: black;
+    font-weight: bold;
   }
   .product-item {
     margin-bottom: 30px;
@@ -327,3 +326,67 @@ object-fit: contain;
   font-size: 16px;
   margin-left: 1106px;
 }
+
+.btn:hover {
+  color: #0f0f0f !important;
+  background-color: #d9cab3 !important;
+  border-color: #d9cab3 !important;
+  font-weight: bold;
+}
+
+.button.btn {
+  --bs-btn-color: #212121 !important;
+  --bs-btn-border-color: #212121 !important;
+  --bs-btn-hover-color: #fff;
+  --bs-btn-hover-bg: #212121 !important;
+  --bs-btn-hover-border-color: #212121 !important;
+  --bs-btn-focus-shadow-rgb: 25,135,84;
+  --bs-btn-active-color: #fff;
+  --bs-btn-active-bg: #212121 !important;
+  --bs-btn-active-border-color: #212121 !important;
+  --bs-btn-active-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
+  --bs-btn-disabled-color: #212121 !important;
+  --bs-btn-disabled-bg: transparent;
+  --bs-btn-disabled-border-color: #212121 !important;
+  --bs-gradient: none;
+  font-weight: bold;
+}
+button.btn {
+  border-color: black;
+}
+
+a.text-left:hover{
+  color: #d9cab3;
+  ;
+}
+
+.category-box .content h3 {
+  margin: 0;
+  color: #fff !important;
+  font-size: 20px;
+  font-weight: 500;
+}
+p {
+  font-family: "Poppins", sans-serif;
+  color: #cac3c3 !important;
+  font-size: 15px;
+}
+.bage1{
+  position: absolute;
+    top: 12px;
+    right: 12px;
+    background: #f44336;
+    color: #fff;
+    font-size: 12px;
+    padding: 4px 12px;
+    font-weight: 300;
+    display: inline-block;
+}
+
+.section {
+  padding: 0px 0 !important;
+}
+.title {
+  padding: 0px 0 30px !important;
+}
+    

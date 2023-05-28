@@ -15,6 +15,9 @@ import { UserAuthComponent } from './user-auth/user-auth.component';
 import { BlogComponent } from './blog/blog.component';
 import { PromotionComponent } from './promotion/promotion.component';
 import { AllproductComponent } from './allproduct/allproduct.component';
+import { BossComponent } from './boss/boss.component';
+import { GuessComponent } from './guess/guess.component';
+import { RolexComponent } from './rolex/rolex.component';
 
 const routes: Routes = [
   {
@@ -83,7 +86,16 @@ const routes: Routes = [
   },
   {
     path:'all_product',component:AllproductComponent,
+  },
+  {
+    path:'BOSS',component:BossComponent,
+  },
+  {
+    path:'GUESS',component:GuessComponent,
   }
+,{
+  path:'ROLEX',component:RolexComponent,
+}
   
 ];
 

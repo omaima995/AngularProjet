@@ -20,16 +20,143 @@
 		<div class="picsum-img-wrapper">
 			<a routerLink="/"><img src="../assets/images/Baniere.png" alt="Logo" class="img-fluid"></a>
 		</div>
-
-
-
 		
 	</div>
 
+
+
 	<div class="product-list-wrapper">
-		<h1 class="title text-center">Our Products</h1>
 		<div class="container"> 
 			<div class ="row">
+
+				<div class="col-md-12">
+					<div class="title text-center">
+						<h2>Our PROMO</h2>
+					</div>
+				</div>
+				<!-- <div class="col-sm-3" *ngFor="let item of trendyProduct"> 
+					<div class="item">
+						<img src= "{{item.image}}">
+						<div class="body">
+							<h4 class="name-head">{{item.name}}</h4>
+							<div class="product-price">
+								<p>{{item.description}}</p>
+							</div>
+						
+							<div class="product-footer px-3 mb-2 d-flex justify-content-between align-items-center">
+								<button class="btn btn-outline-success"><a  routerLink="/details/{{item.id}}">View Details</a></button>
+								<span>{{ item.price }} TND</span>
+								
+								
+							</div>
+						</div>
+					</div>
+					
+		
+				</div> -->
+				<div class="col-md-4" *ngFor="let item of trendyProduct">
+					<div class="product-item">
+						<div class="product-thumb">
+							<span class="bage1">Promotion</span>
+							<a routerLink="/details/{{item.id}}"><img class="img-responsive" src="{{item.image}}" alt="product-img" /></a>
+							<div class="preview-meta">
+								<ul>
+									<li>
+										<span  data-toggle="modal" data-target="#product-modal">
+											<i class="tf-ion-ios-search-strong"></i>
+										</span>
+									</li>
+									<li>
+										<a href="#!" ><i class="tf-ion-ios-heart"></i></a>
+									</li>
+									<li>
+										<a href="#!"><i class="tf-ion-android-cart"></i></a>
+									</li>
+								</ul>
+							  </div>
+						</div>
+						<div class="product-content">
+							<h4><a  routerLink="/details/{{item.id}}" class="text-left">{{item.name}}</a></h4>
+							
+						</div>
+
+						<div class="product-footer px-3 mb-2 d-flex justify-content-between align-items-center">
+							<span >A partir de <label class="label-prix">{{ item.price }}<sup>TND</sup></label></span>
+							<button class="btn" style="border-color: #21209C;"><a  routerLink="/details/{{item.id}}"><div >View Details</div></a></button>
+							
+							
+							
+						</div>
+						
+					</div>
+					
+				</div>
+				<div class="text-right mt-3">
+					<a routerLink="promotion" title="view details" class="read-more"> Voir toutes nos offres <i class="fa fa-angle-double-right"></i> </a>
+				</div>
+				 
+		</div>
+		
+		</div>
+	</div>
+
+	<section class="product-category section">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-12">
+					<div class="title text-center">
+						<h2>Our Trendy Marks</h2>
+					</div>
+				</div>
+				<div class="col-md-6">
+					<div class="category-box">
+						<a href="#!">
+							<a routerLink="GUESS"><img src="../assets/images/111.jpg" alt="Logo" class="img-fluid"></a>
+
+							<div class="content">
+								<h3>Guess </h3>
+								<p>Explore The Everlasting Charm Of Guess Watches</p>
+							</div>
+						</a>	
+					</div>
+					<div class="category-box">
+						<a href="#!">
+							<a routerLink="ROLEX"><img src="../assets/images/relex.jpg" alt="Logo" class="img-fluid"></a>
+
+							<div class="content">
+								<h3>Rolex </h3>
+								<p>Discover The Timeless Elegance Of Rolex Watches</p>
+							</div>
+						</a>	
+					</div>
+				</div>
+				<div class="col-md-6">
+					<div class="category-box category-box-2">
+						<a href="#!">
+							<a routerLink="BOSS"><img src="../assets/images/boss.jpg" alt="Logo" class="img-fluid"></a>
+
+							<div class="content">
+								<h3>Boss</h3>
+								<p>Indulge in luxury with Boss watches</p>
+							</div>
+						</a>	
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+
+
+	<div class="product-list-wrapper">
+		<h1 class="title text-center"></h1>
+		<div class="container"> 
+			<div class ="row">
+				<div class="col-md-12">
+					<div class="title text-center">
+						<h2>Our Products</h2>
+					</div>
+				</div>
 				<!-- <div class="col-sm-3" *ngFor="let item of trendyProduct"> 
 					<div class="item">
 						<img src= "{{item.image}}">
@@ -78,7 +205,7 @@
 
 						<div class="product-footer px-3 mb-2 d-flex justify-content-between align-items-center">
 							<span >A partir de <label class="label-prix">{{ item.price }}<sup>TND</sup></label></span>
-							<button class="btn" style="border-color: #21209C;"><a  routerLink="/details/{{item.id}}"><div >View Details</div></a></button>
+							<button class="btn"><a  routerLink="/details/{{item.id}}"><div >View Details</div></a></button>
 							
 							
 							
@@ -96,16 +223,26 @@
 		</div>
 	</div>
 
-	<div class="product-list-wrapper">
-		<div class="container"> 
-			<div class ="row">
-				<a routerLink="/"><img src="../assets/images/Promotion.png" alt="Logo" class="img-fluid"></a>
+	
+	
 
-				
+
+	<div *ngIf="popularProduct">
+		<div *ngFor ="let item of popularProduct" ngbSlide>
+			
+	
+	
+			
 		</div>
+	
+	
 		
-		</div>
+		
 	</div>
+	
+	
+	
+
 	
 </div>
 

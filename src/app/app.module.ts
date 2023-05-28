@@ -41,6 +41,9 @@ import { SliderComponent } from './slider/slider.component';
 import { BlogComponent } from './blog/blog.component';
 import { PromotionComponent } from './promotion/promotion.component';
 import { AllproductComponent } from './allproduct/allproduct.component';
+import { BossComponent } from './boss/boss.component';
+import { GuessComponent } from './guess/guess.component';
+import { RolexComponent } from './rolex/rolex.component';
 
 
 
@@ -72,6 +75,9 @@ import { AllproductComponent } from './allproduct/allproduct.component';
     BlogComponent,
     PromotionComponent,
     AllproductComponent,
+    BossComponent,
+    GuessComponent,
+    RolexComponent,
  
 
 
