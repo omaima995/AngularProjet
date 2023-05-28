@@ -40,6 +40,7 @@ import { NavbarComponent } from './navbar/navbar.component';
 import { SliderComponent } from './slider/slider.component';
 import { BlogComponent } from './blog/blog.component';
 import { PromotionComponent } from './promotion/promotion.component';
+import { AllproductComponent } from './allproduct/allproduct.component';
 
 
 
@@ -70,6 +71,7 @@ import { PromotionComponent } from './promotion/promotion.component';
     SliderComponent,
     BlogComponent,
     PromotionComponent,
+    AllproductComponent,
  
 
 

@@ -38,6 +38,11 @@ export class ProductService {
         return this.http.get<product[]>('http://localhost:3000/products?_limit=6');
 
   }
+
+  alltoProduct(){
+    return this.http.get<product[]>('http://localhost:3000/products?_limit=20');
+
+}
   searchProducts(query: string){
     return this.http.get<product[]>(`http://localhost:3000/products?q=${query}`);
 

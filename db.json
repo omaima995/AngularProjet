@@ -150,6 +150,12 @@
       "email": "admin@gmail.com",
       "password": "123456",
       "id": 28
+    },
+    {
+      "name": "ngfj",
+      "email": "ngfj",
+      "password": "ngfjfn",
+      "id": 29
     }
   ],
   "products": [

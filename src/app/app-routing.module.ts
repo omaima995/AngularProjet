@@ -14,6 +14,7 @@ import { SellerUpdateProductComponent } from './seller-update-product/seller-upd
 import { UserAuthComponent } from './user-auth/user-auth.component';
 import { BlogComponent } from './blog/blog.component';
 import { PromotionComponent } from './promotion/promotion.component';
+import { AllproductComponent } from './allproduct/allproduct.component';
 
 const routes: Routes = [
   {
@@ -79,6 +80,9 @@ const routes: Routes = [
     path:'promotion',component:PromotionComponent,
 
 
+  },
+  {
+    path:'all_product',component:AllproductComponent,
   }
   
 ];
