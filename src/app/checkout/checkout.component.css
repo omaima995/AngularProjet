@@ -2598,6 +2598,10 @@ input.form-control {
 p.message.order-message {
   margin-left: -10px;
 }
+button.btn.btn-main.text-center {
+  font-size: 13px !important;
+
+}
 
     
     

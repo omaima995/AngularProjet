@@ -94,13 +94,13 @@ a.nav-link.active {
 .suggested-result {
     list-style: none;
     position: absolute;
-display: list-item !important ;
-z-index: 10;
-background-color: #fff;
-width: 630px;
-top: 60px;
-border: 1px solid #ddd;
-
+    display: list-item !important;
+    z-index: 10;
+    background-color: #fff;
+    width: 328px;
+    top: 60px;
+    border: 1px solid #ddd;
+    left: 852px;
   }
   .suggested-result li:hover {
     background-color: #e6e6e6; 
