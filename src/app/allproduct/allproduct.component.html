@@ -1,16 +1,4 @@
-<!--
-	<ngb-carousel *ngIf="popularProduct">
-	<ng-template *ngFor ="let item of popularProduct" ngbSlide>
-		<div class="picsum-img-wrapper">
-			<img class="product-header-img" src="{{item.image}}" alt="Random first slide" />
-		</div>
-		<div class="carousel-caption">
-			<h3>{{item.name}}</h3>
-			<p>{{item.description}}</p>
-		</div>
-	</ng-template>
-	 il div ba3d blasetha houni 
-</ngb-carousel>
+
 
 <!DOCTYPE html>
 
@@ -53,63 +41,17 @@
 				<div class="content">
 					<ol class="breadcrumb">
 						<li><a href="index.html">Home</a></li><li>/</li>
-						<li class="active">Promotion</li>
+						<li class="active">  All product</li>
 					</ol>
 				</div>
 			</div>
 		</div>
 	</div>
 </section>
-
-
-
-
-
-
-
-    <!-- 
-    Essential Scripts
-    =====================================-->
-    
-    <!-- Main jQuery -->
-    <script src="plugins/jquery/dist/jquery.min.js"></script>
-    <!-- Bootstrap 3.1 -->
-    <script src="plugins/bootstrap/js/bootstrap.min.js"></script>
-    <!-- Bootstrap Touchpin -->
-    <script src="plugins/bootstrap-touchspin/dist/jquery.bootstrap-touchspin.min.js"></script>
-    <!-- Instagram Feed Js -->
-    <script src="plugins/instafeed/instafeed.min.js"></script>
-    <!-- Video Lightbox Plugin -->
-    <script src="plugins/ekko-lightbox/dist/ekko-lightbox.min.js"></script>
-    <!-- Count Down Js -->
-    <script src="plugins/syo-timer/build/jquery.syotimer.min.js"></script>
-
-    <!-- slick Carousel -->
-    <script src="plugins/slick/slick.min.js"></script>
-    <script src="plugins/slick/slick-animation.min.js"></script>
-
-    <!-- Google Mapl -->
-    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCC72vZw-6tGqFyRhhg5CkF2fqfILn2Tsw"></script>
-    <script type="text/javascript" src="plugins/google-map/gmap.js"></script>
-
-    <!-- Main Js File -->
-    <script src="js/script.js"></script>
-    
-
-
-  </body>
-  </html>
-
-
 <div *ngIf="popularProduct">
-	<div *ngFor ="let item of popularProduct" ngbSlide>
-		
-
-
-		
-	</div>
-
+	
 	<div class="product-list-wrapper">
+		
 		<div class="container"> 
 			<div class ="row">
 				<!-- <div class="col-sm-3" *ngFor="let item of trendyProduct"> 
@@ -132,10 +74,10 @@
 					
 		
 				</div> -->
-				<div class="col-md-4" *ngFor="let item of trendyProduct">
+				<div class="col-md-4" *ngFor="let item of  alltoProduct">
 					<div class="product-item">
 						<div class="product-thumb">
-							<span class="bage">Promotion</span>
+							<span class="bage">Sale</span>
 							<a routerLink="/details/{{item.id}}"><img class="img-responsive" src="{{item.image}}" alt="product-img" /></a>
 							<div class="preview-meta">
 								<ul>
@@ -169,6 +111,7 @@
 					</div>
 					
 				</div>
+				
 				 
 		</div>
 		

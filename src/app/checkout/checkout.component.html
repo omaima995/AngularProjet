@@ -1,15 +1,143 @@
+<!DOCTYPE html>
+
+<!--
+ // WEBSITE: https://themefisher.com
+ // TWITTER: https://twitter.com/themefisher
+ // FACEBOOK: https://www.facebook.com/themefisher
+ // GITHUB: https://github.com/themefisher/
+-->
+
+<html lang="en">
+<head>
+
+  <!-- Basic Page Needs
+  ================================================== -->
+  <meta charset="utf-8">
+  <title>Aviato | E-commerce template</title>
+
+  <!-- Mobile Specific Metas
+  ================================================== -->
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="description" content="Construction Html5 Template">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0">
+  <meta name="author" content="Themefisher">
+  <meta name="generator" content="Themefisher Constra HTML Template v1.0">
+  
+ 
+
+</head>
+
+<body id="body">
+
+<!-- Start Top Header Bar -->
+
+
+<section class="page-header">
+	<div class="container">
+		<div class="row">
+			<div class="col-md-12">
+				<div class="content">
+					<ol class="breadcrumb">
+						<li><a href="index.html">Home</a></li><li>/</li>
+						<li><a href="cart-page">Cart</a></li><li>/</li>
+
+						<li class="active">checkout</li>
+					</ol>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+
+
+<section class="signin-page account">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-7 col-md-offset-3">
+          <div class="block text-center">
+
+            <p class="message order-message ">{{orderMessage}}</p>
+
+            <h2 class="text-center">Add Shipping Address</h2>
+            <form class="text-left clearfix" (ngSubmit)="orderNow(orderData.value)">
+              <div class="form-group">
+                <input type="email" class="form-control"   placeholder="Enter User Email" name="email" ngModel>
+              </div>
+              <div class="form-group">
+                <input type="text" class="form-control"  placeholder="Enter your address" name="address" ngMode>
+              </div>
+              <div class="form-group">
+                <input type="text" class="form-control"  placeholder="Enter your contact" name="contact" ngModel>
+              </div>
+              
+              <div class="text-center">
+                <button type="submit" class="btn btn-main text-center">Order Now</button>
+              </div>
+            </form>
+           
+          </div>
+        </div>
+        <div class="col-md-5">
+            <div class="card">
+              <div class="card-header bg-black"></div>
+              <div class="card-body">
+                <div class="container">
+                  <div class="row">
+                      <div class="col-xl-12 d-flex align-items-center">
+                        <a routerLink="/"><img src="../assets/images/Logopng1.png" alt="Logo" class="img-fluid" width="100px"></a>
+                        <ul class="list-unstyled ml-auto">
+                          <li style="    font-size: 23px;     margin-left: 217px; color: rgb(69, 67, 67);">Company</li>
+                          <li style="margin-left: 219px;">Golden Watch</li>
+                          <li style="margin-left: 219px;" >123-456-789</li>
+                          <li style="margin-left: 219px;">mail@mail.com</li>
+                        </ul>
+                      </div>
+                    </div>
+                    <br>
+                    
+                  <div class="row text-center">
+                    <h3 class="text-uppercase text-center mt-3" style="font-size: 40px;">Invoice</h3>
+                    <p>123456789</p>
+                  </div>
+                  <div class="row mx-3">
+                    
+                  </div>
+                  <div class="row">
+                    <div class="col-xl-8">
+                      
+                    </div>
+                  </div>
+                  <hr>
+                  <div class="row">
+                    <div class="col-xl-8" style="margin-left:12px">
+                      <p class="float-end"
+                        style="font-size: 30px;  color: black; font-weight: 400;font-family: Arial, Helvetica, sans-serif;">
+                        Total amount:
+                        <span><i class="fas fa-dollar-sign"></i> {{totalPrice}}</span></p>
+                    </div>
+                  </div>
+                  <div class="row mt-2 mb-5">
+                    <p class="fw-bold">Date: <span class="text-muted"> MAY 2023</span></p>
+                  
+                  </div>
+        
+                </div>
+              </div>
+              <div class="card-footer bg-black"></div>
+            </div>
+          </div>
+
+
+      </div>
+    </div>
+  </section>
+
 <div class="checkout">
-    <h1 class="title-checkout">Checkout</h1>
      <p class="message order-message">{{orderMessage}}</p>
     
     <div class="row">
         <div class="col-sm-7 Shipping ">
-            <h3 class="material-h3 check-out"> Add Shipping Address</h3>
             <form #orderData="ngForm" class="common-form input-form" (ngSubmit)="orderNow(orderData.value)">
-                <input type="email" class="form-control bootstrap-input input-checkout" placeholder="Enter User Email" name="email" ngModel>
-                <input type="text" class="form-control bootstrap-input input-checkout" placeholder="Enter your address" name="address" ngModel>
-                <input type="text" class="form-control bootstrap-input input-checkout" placeholder="Enter your contact" name="contact" ngModel>
-                <button class="btn btn-outline-success material-button input-checkout" type="submit">Order Now</button>
             </form>
         </div>
         
@@ -43,20 +171,9 @@
             </form>
         </div>
 -->
-        <div class="col-sm-4 summary">
-            <div class="item-description">
-            <div class="details">
-                <h3 class="price-product">Your Total Bill </h3>
-            </div>
-            
-            <ul>
-                <li><span>Total amount: </span><span><b>{{totalPrice}}</b></span></li>
-                <li><span>payment Methode:</span><span><b>Pay on delivery</b></span></li>
-                
 
-            </ul>
 
-        </div>
+
      
 
 </div>

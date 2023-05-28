@@ -1,80 +1,176 @@
+<!DOCTYPE html>
+
+<!--
+ // WEBSITE: https://themefisher.com
+ // TWITTER: https://twitter.com/themefisher
+ // FACEBOOK: https://www.facebook.com/themefisher
+ // GITHUB: https://github.com/themefisher/
+-->
+
+<html lang="en">
+<head>
+
+  <!-- Basic Page Needs
+  ================================================== -->
+  <meta charset="utf-8">
+  <title>Aviato | E-commerce template</title>
+
+  <!-- Mobile Specific Metas
+  ================================================== -->
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="description" content="Construction Html5 Template">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0">
+  <meta name="author" content="Themefisher">
+  <meta name="generator" content="Themefisher Constra HTML Template v1.0">
+  
+ 
+
+</head>
+
+<body id="body">
+
+<!-- Start Top Header Bar -->
+
+
+<section class="page-header">
+	<div class="container">
+		<div class="row">
+			<div class="col-md-12">
+				<div class="content">
+					<ol class="breadcrumb">
+						<li><a href="index.html">Home</a></li><li>/</li>
+						<li class="active">Cart</li>
+					</ol>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+
+
 <div class="container cartpage">
 
-  <h1 class="title-checkout">Cart Page</h1>
-      <div class="row">
+            <div class="row">
 
-          <div class="col-sm-8 details">
-              <table class="table table-striped">
-                  <thead>
-                      <tr class="text-center">
-                          <th colspan="1">Image</th>
-                          <th colspan="1">Name</th>
-                          <th colspan="1">Price</th>
-
-
-                          <th colspan="2">Action</th>
+                <div class="col-sm-8 details">
+                    <table class="table table-striped">
+                        <thead>
+                            <tr class="text-center">
+                                <th colspan="1">Image</th>
+                                <th colspan="1">Name</th>
+                                <th colspan="1">Price</th>
+                                <th colspan="1">Quantity</th>
 
 
+                                <th colspan="2">Action</th>
 
 
+
+
+                            </tr>
+
+                        </thead>
+                        <tbody>
+                            <tr *ngFor="let cart of cartData">
+
+                                <td colspan="1">
+                                    <img class="img-tabel" src ={{cart.image}}>
+
+                                </td>
+                                <td colspan="1">
+                                    <span>{{cart.name}}</span>
+
+                                </td>
+                                <td colspan="1">
+                                    <span>Price:{{cart.price}}</span>
+
+
+                                </td>
+                                <td colspan="1">
+                                    <span>Quantity:{{cart.quantity}}</span>
+
+                                </td>
+                                <td colspan="2">
+                                    <button class="form-button btn btn-outline-danger" (click)="removeToCart(cart.id)">Remove to cart</button>
+
+                                </td>
+
+                            </tr>
+                        </tbody>
+                    </table>
+
+                </div>
+
+<div class="col-md-4">
+          <div class="card">
+            <div class="card-header bg-black"></div>
+            <div class="card-body">
+              <div class="container">
+                <div class="row">
+                    <div class="col-xl-12 d-flex align-items-center">
+                      <a routerLink="/"><img src="../assets/images/Logopng1.png" alt="Logo" class="img-fluid" width="100px"></a>
+                      <ul class="list-unstyled ml-auto">
+                        <li style="    font-size: 23px;     margin-left: 117px; color: rgb(69, 67, 67);">Company</li>
+                        <li style="margin-left: 119px;">Golden Watch</li>
+                        <li style="margin-left: 119px;" >123-456-789</li>
+                        <li style="margin-left: 119px;">mail@mail.com</li>
+                      </ul>
+                    </div>
+                  </div>
+                  <br>
+                  
+                <div class="row text-center">
+                  <h3 class="text-uppercase text-center mt-3" style="font-size: 40px;">Invoice</h3>
+                  <p>123456789</p>
+                </div>
+                <div class="row mx-3">
+                  <table class="table">
+                    <thead>
+                      <tr>
+                        <th scope="col"></th>
                       </tr>
+                    </thead>
+                    <tbody>
+                      
+                   </tbody>
+                  </table>
+                </div>
+                <div class="row">
+                  <div class="col-xl-8">
+                    <ul class="list-unstyled float-end me-0">
+                      <li>
+                        <span class="me-3 float-start">Total Amount:</span><i class="fas fa-dollar-sign"></i> {{priceSummary.price}}
+                      </li>
+                      <li> <span class="me-5">Delivery:</span><i class="fas fa-dollar-sign" style="MARGIN-LEFT: 14PX;"></i>{{priceSummary.delivery}}</li>
+                    
+                    </ul>
+                  </div>
+                </div>
+                <hr>
+                <div class="row">
+                  <div class="col-xl-8" style="margin-left:12px">
+                    <p class="float-end"
+                      style="font-size: 30px; color: red; font-weight: 400;font-family: Arial, Helvetica, sans-serif;">
+                      Total:
+                      <span><i class="fas fa-dollar-sign"></i> {{priceSummary.total}}</span></p>
+                  </div>
+                </div>
+                <div class="row mt-2 mb-5">
+                  <p class="fw-bold">Date: <span class="text-muted"> MAY 2023</span></p>
+                
+                </div>
+                <button (click)="checkout()" class="max-width btn btn-outline-success">Checkout</button>
 
-                  </thead>
-                  <tbody>
-                      <tr *ngFor="let cart of cartData">
-
-                          <td colspan="1">
-                              <img class="img-tabel" src ={{cart.image}}>
-
-                          </td>
-                          <td colspan="1">
-                              <span>{{cart.name}}</span>
-
-                          </td>
-                          <td colspan="1">
-                              <span>Price:{{cart.price}}</span>
-
-
-                          </td>
-                          <td colspan="1">
-                              <span>Quantity:{{cart.quantity}}</span>
-
-                          </td>
-                          <td colspan="2">
-                              <button class="form-button btn btn-outline-danger" (click)="removeToCart(cart.id)">Remove to cart</button>
-
-                          </td>
-
-                      </tr>
-                  </tbody>
-              </table>
-
-          </div>
-
-
-
-
-
-          <div class="col-sm-4 summary">
-              <div class="item-description">
-              <div class="details">
-                  <h3 class="price-product">Your Bill </h3>
               </div>
-
-              <ul>
-                  <li><span>Amount: </span><span>{{priceSummary.price}}</span></li>
-                  <li><span>Delivery</span><span>{{priceSummary.delivery}}</span></li>
-                  <li><span><h4>Total</h4></span><span><h4>{{priceSummary.total}}</h4></span></li>
-                  <button (click)="checkout()" class="max-width btn btn-outline-success">Checkout</button>
-
-              </ul>
-
+            </div>
+            <div class="card-footer bg-black"></div>
           </div>
+        </div>
 
 
 
-          </div>
-      </div>
+               
+            </div>
 
 
 

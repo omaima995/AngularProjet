@@ -150,6 +150,12 @@
       "email": "admin@gmail.com",
       "password": "123456",
       "id": 28
+    },
+    {
+      "name": "ngfj",
+      "email": "ngfj",
+      "password": "ngfjfn",
+      "id": 29
     }
   ],
   "products": [
@@ -497,20 +503,17 @@
       "id": 19
     },
     {
-      "email": "rio@gmail.com",
-      "address": "aqdsfghjk",
-      "contact": "1234658585",
-      "totalPrice": 80,
-      "userId": 2,
-      "id": 21
-    },
-    {
       "email": "",
       "address": "",
       "contact": "",
       "totalPrice": 64,
       "userId": 2,
       "id": 22
+    },
+    {
+      "totalPrice": 562,
+      "userId": 2,
+      "id": 28
     }
   ]
 }

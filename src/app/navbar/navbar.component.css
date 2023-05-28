@@ -6282,7 +6282,7 @@
  }
  
  .navbar-nav > li > a:hover {
-   background-color: #e7e7e7;
+   background-color: #d9cab3;
  }
  
  .dropdown-menu {
@@ -6343,3 +6343,6 @@
  ul.nav.navbar-nav {
   display: contents;
 }
+li.dropdown-header {
+  margin-left: -16px;
+} 
