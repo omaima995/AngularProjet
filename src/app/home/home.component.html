@@ -227,20 +227,30 @@
 	
 
 
-	<div *ngIf="popularProduct">
-		<div *ngFor ="let item of popularProduct" ngbSlide>
-			
-	
-	
-			
+	<div class="product-list-wrapper">
+		<h1 class="title text-center"></h1>
+		<div class="container"> 
+			<div class ="row">
+				<div class="col-md-12">
+					<div class="title text-center">
+						<h2>Our Products</h2>
+					</div>
+				</div>
+
+				<div *ngFor ="let item of popularProduct" ngbSlide>
+					<div class="picsum-img-wrapper">
+						<a routerLink="/"><img src="../assets/images/f.png" alt="Logo" class="img-fluid"></a>
+					</div>
+					
+				</div>
+				
+				
+				 
 		</div>
-	
-	
 		
-		
+		</div>
 	</div>
-	
-	
+
 	
 
 	
