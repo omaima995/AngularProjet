@@ -2566,31 +2566,31 @@ a:hover {
   margin-top: 18px;
 }
 input.form-control.input-form {
-  border-radius: 10px;
-  height: 40px !important;
+  border-radius:  10px;
+  height: 40px  !important;
 
 }
 section.page-header {
-  margin-top: -25px;
+  margin-top:  -25px;
 }
 
 .button-rem-add-back.d-inline-flex {
   margin-left: 229px;
 }
 .image-apyement{
-  width: 92%;
-  margin-top: 25px;
-  margin-left: 12px;
+  width:  92%;
+  margin-top:  25px;
+  margin-left:  12px;
 }
 ul.tt-options-swatch {
-  z-index: 100;
-  display: -ms-inline-flexbox;
-  display: -webkit-inline-flex;
-  display: inline-flex;
+  z-index:  100;
+  display:  -ms-inline-flexbox;
+  display:  -webkit-inline-flex;
+  display:  inline-flex;
   -webkit-flex-direction: row;
   -ms-flex-direction: row;
   flex-direction: row;  
-  
+
   -webkit-flex-wrap: wrap;
   -ms-flex-wrap: wrap;
   flex-wrap: wrap;

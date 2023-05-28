@@ -341,18 +341,6 @@
       "id": 1
     },
     {
-      "name": "CupCake",
-      "price": "7",
-      "color": "red",
-      "category": "Sweet ",
-      "description": "This cupcake is like a burst of fresh strawberries in every bite! It's made with a light strawberry ",
-      "image": "https://assets.afcdn.com/recipe/20131116/33422_w1024h1024c1cx320cy480.webp",
-      "quantity": 1,
-      "userId": 2,
-      "productId": 3,
-      "id": 3
-    },
-    {
       "name": "MONTRE GC HOMME CHRONO SILICONE",
       "price": "559",
       "color": "Noir",

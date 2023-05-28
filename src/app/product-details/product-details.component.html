@@ -135,7 +135,7 @@
           ></h3>
 
         --> 
-        
+
         </div>
         <h6 class="category-product">Category: {{ productData.category }}</h6>
         <h3>
@@ -153,15 +153,15 @@
           <input class="form-control input-form" type="text" value="{{ productQuantity }}" />
           <button class="btn btn-dark btn-plus" (click)="handelQuantity('plus')">+</button>
         </div>
-        <div class="button-rem-add-back d-inline-flex">
-          <button class="btn" style="background-color: black">
-            <a routerLink="" style="color: white">Back to menu</a>
+        <div class="button-rem-add-back d-inline-flex" >
+          <button class="btn" style="background-color: black" >
+            <a routerLink="" style="color: white" >Back to menu</a>
           </button>
-          <button *ngIf="!removecart" class="btn btn-outline-success removebtn"
+          <button *ngIf="!removecart" class="btn btn-outline-success removebtn" 
             style="background-color: white; color: black; border: 1px solid black;" (click)="addtoCart()">Add to cart</button>
-          <button *ngIf="removecart" class="btn btn-outline-danger removebtn" (click)="removetoCart(productData.id)">
+          <button *ngIf="removecart"  class="btn btn-outline-danger removebtn" (click)="removetoCart(productData.id)">
             remove to cart
-          </button>
+          </button >
         </div>
         <img src="../assets/images/payment.png" class="image-apyement" alt="Logo" >
 
