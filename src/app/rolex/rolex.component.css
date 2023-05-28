@@ -1,0 +1,29 @@
+.product-item {
+    background: #e5e5e5;
+    /* margin-bottom: 13px; */
+    padding-bottom: 12px;
+}
+a.text-left {
+
+    color: #000;
+    text-decoration: none;
+    font-size: 15px;
+    font-weight: bold;
+}
+
+label.label-prix {
+    font-size: 22px;
+    color: #21209C;
+    font-weight: bold;
+}
+
+.page-header {
+    background: #f5f5f5;
+    margin-top: 20px;
+    border-bottom: none;
+    padding: 10px 0;
+}
+
+.product-list-wrapper {
+    margin-top: 36px;
+}
