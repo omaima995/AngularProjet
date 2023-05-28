@@ -2607,5 +2607,8 @@ margin-top: 10px;
   font-weight: bold;
 }
     
+button.max-width.btn.btn-outline-success {
+  margin-left: -19px;
+}
     
     
