@@ -206,3 +206,41 @@ border: 1px solid #ddd;
     align-items: center;
     justify-content: center;
 }
+
+.commonSelect {
+    margin-left: 10px;
+    padding-right: 6px;
+    position: relative;
+  }
+  .commonSelect:before {
+    content: "v";
+    font-family: "themefisher-font";
+    position: absolute;
+    right: -4px;
+    top: 4px;
+    font-size: 10px;
+    font-weight: bold;
+  }
+  .commonSelect select {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    cursor: pointer;
+    border: none;
+    padding: 0;
+    height: auto;
+    color: #555;
+  }
+  .commonSelect select:focus {
+    box-shadow: none;
+    border: none;
+  }
+
+  ::marker {
+    /* display: none; */
+    color: white;
+}
+
+select.form-control {
+    margin-top: -25px;
+}
+  
