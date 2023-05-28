@@ -5,14 +5,14 @@
     <div class="table-responsive">
       <table class="table">
         <thead>
-          <tr >
-          <th>Image</th>
-          <th>Name</th>
-          <th>Price</th>
-          <th>Color</th>
-          <th>Category</th>
-          <th>Description</th>
-          <th>Action</th>
+          <tr>
+            <th>Image</th>
+            <th>Name</th>
+            <th>Price</th>
+            <th>Color</th>
+            <th>Category</th>
+            <th>Description</th>
+            <th>Action</th>
           </tr>
         </thead>
         <tbody>
@@ -25,11 +25,12 @@
             <td>{{ item.description }}</td>
             <td>
               <div class="btn-group" role="group">
-                <button type="button" class="btn btn-default" >
-                  <fa-icon (click)="deleteProduct(item.id)" [icon]="icon" class="fa-icon" style="color: #f76a5f"></fa-icon>
+                <button type="button" class="btn btn-default">
+                  <fa-icon (click)="deleteProduct(item.id)" [icon]="icon" class="fa-icon"
+                    style="color: #f76a5f"></fa-icon>
                 </button>
                 <a class="adjust-updat-link btn btn-default" routerLink="/seller-update-product/{{ item.id }}">
-                  <fa-icon [icon]="editicon" class="fa-icon"   style="color: #ffca2c"></fa-icon>
+                  <fa-icon [icon]="editicon" class="fa-icon" style="color: #ffca2c"></fa-icon>
                 </a>
               </div>
             </td>
@@ -40,4 +41,3 @@
     </div>
   </div>
 </div>
-

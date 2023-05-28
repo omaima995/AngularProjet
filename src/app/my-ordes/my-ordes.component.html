@@ -1,42 +1,29 @@
 <div class="container">
-
-<div class="my-orders">
- 
-    <h1 class="title-checkout">My order</h1>
-    <div class="row order-data">
-        <div class="col-sm-3 head ecriture">
-            <span> Order</span>
-        </div>
-        <div class="col-sm-3 head order">
-            <span> Order Id</span>
-        </div>
-        <div class="col-sm-3 head ecriture">
-            <span> Price</span>
-        </div>
-    
-        <div class="col-sm-3 head action">
-            <span>Action</span>
-        </div>
-
+    <div class="my-orders">
+      <h1  class="title text-center">My orders</h1>
+      <table class="table">
+        <thead>
+          <tr>
+            <th>Order</th>
+            <th>Order Id</th>
+            <th>Price</th>
+            <th>Action</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr *ngFor="let order of orderData">
+            <td>
+                <div class="col-sm-3">
+                    <img src="../assets/images/iit.png" alt="Logo" class="img-fluid">
+                </div>
+            </td>
+            <td>{{ order.id }}</td>
+            <td>{{ order.totalPrice }}</td>
+            <td>
+              <button class="btn btn-main" (click)="cancelOrder(order.id)">Cancel</button>
+            </td>
+          </tr>
+        </tbody>
+      </table>
     </div>
-    <div class="row order-data" *ngFor="let order of orderData">
-    
-        <div class="col-sm-3">
-            <img src="../assets/images/iit.png" alt="Logo" class="img-fluid">
-        </div>
-        <div class="col-sm-3">
-            <span>{{order.id}}</span>
-        </div>
-        <div class="col-sm-3">
-            <span>{{order.totalPrice}}</span>
-        </div>
-       
-        <div class="col-sm-3">
-            <span><button class="btn btn-outline-success" (click)="cancelOrder(order.id)">cancel Order</button></span>
-        </div>
-
-    </div>
-
-</div>
-
 </div>
