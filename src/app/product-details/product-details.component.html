@@ -1,3 +1,84 @@
+
+<html lang="en">
+<head>
+
+  <!-- Basic Page Needs
+  ================================================== -->
+  <meta charset="utf-8">
+  <title>Aviato | E-commerce template</title>
+
+  <!-- Mobile Specific Metas
+  ================================================== -->
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="description" content="Construction Html5 Template">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0">
+  <meta name="author" content="Themefisher">
+  <meta name="generator" content="Themefisher Constra HTML Template v1.0">
+  
+ 
+
+</head>
+
+<body id="body">
+
+<!-- Start Top Header Bar -->
+
+
+<section class="page-header">
+	<div class="container">
+		<div class="row">
+			<div class="col-md-12">
+				<div class="content">
+					<ol class="breadcrumb">
+						<li><a href="index.html">Home</a></li><li>/</li>
+						<li class="active">Detail</li>
+					</ol>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+
+
+
+
+
+
+
+    <!-- 
+    Essential Scripts
+    =====================================-->
+    
+    <!-- Main jQuery -->
+    <script src="plugins/jquery/dist/jquery.min.js"></script>
+    <!-- Bootstrap 3.1 -->
+    <script src="plugins/bootstrap/js/bootstrap.min.js"></script>
+    <!-- Bootstrap Touchpin -->
+    <script src="plugins/bootstrap-touchspin/dist/jquery.bootstrap-touchspin.min.js"></script>
+    <!-- Instagram Feed Js -->
+    <script src="plugins/instafeed/instafeed.min.js"></script>
+    <!-- Video Lightbox Plugin -->
+    <script src="plugins/ekko-lightbox/dist/ekko-lightbox.min.js"></script>
+    <!-- Count Down Js -->
+    <script src="plugins/syo-timer/build/jquery.syotimer.min.js"></script>
+
+    <!-- slick Carousel -->
+    <script src="plugins/slick/slick.min.js"></script>
+    <script src="plugins/slick/slick-animation.min.js"></script>
+
+    <!-- Google Mapl -->
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCC72vZw-6tGqFyRhhg5CkF2fqfILn2Tsw"></script>
+    <script type="text/javascript" src="plugins/google-map/gmap.js"></script>
+
+    <!-- Main Js File -->
+    <script src="js/script.js"></script>
+    
+
+
+  </body>
+  </html>
+
+
 <div class="container">
   <div class="row" *ngIf="productData">
     <div class="col-sm-3 product-colms">
@@ -6,7 +87,39 @@
         <div class="body">
           <h1 class="titel-product">{{ productData.name }}</h1>
         </div>
+
       </div>
+      <ul class="tt-options-swatch options-large imgvariation_nocarrousel">
+        <li class="imgvariation">
+<a data-toggle="modal" data-tooltip="BLEU" data-tposition="top" data-productcolorid="7536" data-colorid="46" href="#" class="options-color-img options-color-imgs active" id="first_color_option">
+<img class="lazyload" src="http://www.chakrounwatch.com.tn/uploads/articles/MONTRE GC HOMME CHRONO SILICONE-7869-1-1-1650878916.jpg " alt="MONTRE GC HOMME CHRONO SILICONE">
+</a>
+
+
+</li>
+        <li class="imgvariation">
+<a data-toggle="modal" data-tooltip="NOIR" data-tposition="top" data-productcolorid="7536" data-colorid="3" href="#" class="options-color-img options-color-imgs">
+<img class="lazyload" src="http://www.chakrounwatch.com.tn/uploads/articles/MONTRE GC HOMME CHRONO SILICONE-7868-0-1-1650878916.jpg " alt="MONTRE GC HOMME CHRONO SILICONE">
+</a>
+
+
+</li>
+
+<li class="imgvariation">
+  <a data-toggle="modal" data-tooltip="BLEU" data-tposition="top" data-productcolorid="7536" data-colorid="46" href="#" class="options-color-img options-color-imgs active" id="first_color_option">
+  <img class="lazyload" src="http://www.chakrounwatch.com.tn/uploads/articles/MONTRE GC HOMME CHRONO SILICONE-7869-1-1-1650878916.jpg " alt="MONTRE GC HOMME CHRONO SILICONE">
+  </a>
+  
+  
+  </li>
+   <li class="imgvariation">
+<a data-toggle="modal" data-tooltip="BLEU" data-tposition="top" data-productcolorid="7536" data-colorid="46" href="#" class="options-color-img options-color-imgs active" id="first_color_option">
+<img class="lazyload" src="http://www.chakrounwatch.com.tn/uploads/articles/MONTRE GC HOMME CHRONO SILICONE-7869-1-1-1650878916.jpg " alt="MONTRE GC HOMME CHRONO SILICONE">
+</a>
+
+
+</li>
+</ul>
     </div>
 
     <div class="col-sm-6">
@@ -15,59 +128,51 @@
           <h3 class="price-product">Price: {{ productData.price }}TND</h3>
         </div>
         <div class="details">
-          <h3
+        <!--
+ <h3
             [style.backgroundColor]="productData.color"
             class="product-color"
           ></h3>
+
+        --> 
+
         </div>
         <h6 class="category-product">Category: {{ productData.category }}</h6>
         <h3>
           <span class="title-description">Descriptin:</span><br /><span
             class="description-product"
           >
-            {{ productData.description }}
+          {{ productData.description }}
           </span>
         </h3>
-        <div class="quantity">
-          <button class="btn btn-dark btn-mois" (click)="handelQuantity('min')">
-            -
-          </button>
-          <input
-            class="form-control input-form"
-            type="text"
-            value="{{ productQuantity }}"
-          />
-          <button
-            class="btn btn-dark btn-plus"
-            (click)="handelQuantity('plus')"
-          >
-            +
-          </button>
+        <div>
+          
         </div>
-        <div class="button-rem-add-back">
-          <button class="btn" style="background-color: black">
-            <a routerLink="" style="color: white">Back to menu</a>
-          </button>
-          <button
-            *ngIf="!removecart"
-            class="btn btn-outline-success removebtn"
-            style="
-              background-color: white;
-              color: black;
-              border: 1px solid black;
-            "
-            (click)="addtoCart()"
-          >
-            Add to cart
-          </button>
-          <button
-            *ngIf="removecart"
-            class="btn btn-outline-danger removebtn"
-            (click)="removetoCart(productData.id)"
-          >
-            remove to cart
-          </button>
+        <div class="d-flex">
+          <div class="quantity d-inline-flex">
+            <button class="btn btn-dark btn-mois" (click)="handelQuantity('min')">-</button>
+            <input class="form-control input-form" type="text" value="{{ productQuantity }}" />
+            <button class="btn btn-dark btn-plus" (click)="handelQuantity('plus')">+</button>
+          </div>
+          <div class="button-cart">
+            <div class="button-rem-add-back d-inline-flex">
+              <button class="btn" style="background-color: black">
+                <a routerLink="" style="color: white">Back to menu</a>
+              </button>
+              <button *ngIf="!removecart" class="btn btn-outline-success removebtn"
+                style="background-color: white; color: black; border: 1px solid black;" (click)="addtoCart()">Add to cart</button>
+              <button *ngIf="removecart" class="btn btn-outline-danger removebtn" (click)="removetoCart(productData.id)">
+                remove to cart
+              </button>
+            </div>
+          </div>
+          
         </div>
+        
+        <img src="../assets/images/payment.png" class="image-apyement" alt="Logo" >
+
+
+
       </div>
     </div>
   </div>
