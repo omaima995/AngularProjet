@@ -16,3 +16,14 @@ label.label-prix {
     color: #21209C;
     font-weight: bold;
 }
+
+.page-header {
+    background: #f5f5f5;
+    margin-top: 20px;
+    border-bottom: none;
+    padding: 10px 0;
+}
+
+.product-list-wrapper {
+    margin-top: 36px;
+}
