@@ -38,6 +38,8 @@ import { TestComponent } from './test/test.component';
 import { FooterComponent } from './footer/footer.component';
 import { NavbarComponent } from './navbar/navbar.component';
 import { SliderComponent } from './slider/slider.component';
+import { BlogComponent } from './blog/blog.component';
+import { PromotionComponent } from './promotion/promotion.component';
 
 
 
@@ -66,6 +68,8 @@ import { SliderComponent } from './slider/slider.component';
     FooterComponent,
     NavbarComponent,
     SliderComponent,
+    BlogComponent,
+    PromotionComponent,
  
 
 

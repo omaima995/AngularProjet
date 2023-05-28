@@ -6268,7 +6268,7 @@
    }
  }
  #navbar {
-   background-color: #f8f8f8;
+   background-color: #fff;
  }
  
  .navbar-nav > li {
@@ -6340,4 +6340,6 @@
  .dropdown-menu > .dropdown-header {
    font-weight: bold;
  }
- 
+ ul.nav.navbar-nav {
+  display: contents;
+}

@@ -81,7 +81,9 @@
     margin-left: -357px;
 }
 .inputsearch{
-    width: 357px;
+    width: 186px;
+    margin-left: 193px;
+
 }
 .menu{
     margin-left: 33px;
@@ -167,4 +169,12 @@ border: 1px solid #ddd;
     --bs-btn-disabled-border-color: #d9cab3;
     --bs-gradient: none;
 }
+.text-gray {
+    background-color: #fff;
+    padding: 0px 4px 0px 4px;
+    font-size: 13px;
+    border-radius: 20px;
+    color: #22b24c;
+}
+
 
