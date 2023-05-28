@@ -13,7 +13,7 @@ a.text-left {
 
 label.label-prix {
     font-size: 22px;
-    color: #21209C;
+    color: #000000;
     font-weight: bold;
 }
 
@@ -26,4 +26,26 @@ label.label-prix {
 
 .product-list-wrapper {
     margin-top: 36px;
+}
+
+.product-footer.px-3.mb-2.d-flex.justify-content-between.align-items-center {
+    margin-top: 26px;
+}
+
+button.btn {
+    background: black;
+    /* color: white; */
+    border-radius: 0;
+    border-radius: black !important;
+}
+
+a {
+    color: white;
+}
+
+
+sup {
+    background: red;
+    color: white;
+    font-size: 13px;
 }
